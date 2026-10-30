@@ -1,0 +1,15 @@
+{
+  "schema": "cttn.toolchain-v1",
+  "node": "22.23.3",
+  "npm": "10.9.9",
+  "typescript": {
+    "version": "7.0.2",
+    "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+    "platformBinaries": {
+      "@typescript/typescript-darwin-arm64": "sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA==",
+      "@typescript/typescript-linux-arm64": "sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ==",
+      "@typescript/typescript-linux-x64": "sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A=="
+    }
+  },
+  "note": "Build tool pins only. This is not an npm lockfile; the package declares typescript 7.0.2 as its only devDependency and tailwindcss ^4.0.0 as its only peer."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "cttn.engine-archives-v1",
+  "engines": [
+    {
+      "role": "solar",
+      "package": "@knowledge-forge-ai/theme-forge-solar-sail",
+      "version": "0.3.0",
+      "tarball": "https://registry.npmjs.org/@knowledge-forge-ai/theme-forge-solar-sail/-/theme-forge-solar-sail-0.3.0.tgz",
+      "sha256": "65070c3478a1d55476c1b09fbe1dcadfdf7c3d3aa54a154bc9ac9e299411f415",
+      "integrity": "sha512-UFXyo3upUlj7x7eCMn9Aay9OlvnDhNZ4recQhl9YWA2OSAKnjNQGJZBfbYS6Q0XUO+nZY+oEG1Nvu3xAOuo8vg==",
+      "entry": "dist/index.js"
+    },
+    {
+      "role": "loom",
+      "package": "@knowledge-forge-ai/theme-forge-stellar-loom",
+      "version": "0.5.0",
+      "tarball": "https://registry.npmjs.org/@knowledge-forge-ai/theme-forge-stellar-loom/-/theme-forge-stellar-loom-0.5.0.tgz",
+      "sha256": "4e7a7d436c09ba111f5dca8101876c6e085ad15859d96bab8f728c5669880b5f",
+      "integrity": "sha512-1tgZbcrBCxLZj0rkhCX7XnEVUCAmecS2FefY7TPnjP9o82vSjKnj3h6g3DX/QT7u3CWn+pXfPzQokrlrp6Q8iQ==",
+      "entry": "dist/index-catalog.js"
+    }
+  ]
+}

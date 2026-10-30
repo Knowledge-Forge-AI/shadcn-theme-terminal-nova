@@ -1,0 +1,8 @@
+{
+  "name": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
+  "version": "0.1.0",
+  "private": false,
+  "license": "AGPL-3.0-or-later",
+  "author": "Samuel Leighton Lair <sam.lair@knowledge-forge.ai>",
+  "description": "Terminal Nova theme for Tailwind CSS v4 and shadcn/ui"
+}

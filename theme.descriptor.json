@@ -1,0 +1,14 @@
+{
+  "compiler": {
+    "name": "@knowledge-forge-ai/theme-forge-solar-sail",
+    "version": "0.3.0"
+  },
+  "diagnostics": [],
+  "inputDigest": "8f7213793ebc7307346ffc1b883014ede76c352d85b5bf86d69fdba09bf5f201",
+  "inventoryDigest": "3a2fc079684cf8e7a17dc2136194af5e9425df98042b770345d3bd47f65109c8",
+  "outputDigest": "acf0ccb3c315f6de0c2cf655260efa520431996f8c510f3ddb2941e0ac4d7fe9",
+  "schema": "tfss.theme-descriptor-v1",
+  "sourceProfileSha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf",
+  "themeName": "terminal-nova",
+  "themeVersion": "0.1.0"
+}

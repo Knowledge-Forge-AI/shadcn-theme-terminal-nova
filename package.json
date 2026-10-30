@@ -1,0 +1,66 @@
+{
+  "name": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
+  "version": "0.1.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova.git"
+  },
+  "homepage": "https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova#readme",
+  "bugs": {
+    "url": "https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova/issues"
+  },
+  "type": "module",
+  "description": "Terminal Nova theme for Tailwind CSS v4 and shadcn/ui",
+  "license": "AGPL-3.0-or-later",
+  "author": "Samuel Leighton Lair <sam.lair@knowledge-forge.ai>",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles/*": "./styles/*",
+    "./theme.json": "./theme.json",
+    "./status": {
+      "types": "./dist/status.d.ts",
+      "import": "./dist/status.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "tsconfig.json",
+    "styles",
+    "theme.json",
+    "theme.descriptor.json",
+    "provenance.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "COMMERCIAL-LICENSE.md",
+    "CLA.md",
+    "CONTRIBUTING.md",
+    ".github/pull_request_template.md",
+    "composition.json",
+    "reports",
+    "loom-counterpart",
+    "build-receipt.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

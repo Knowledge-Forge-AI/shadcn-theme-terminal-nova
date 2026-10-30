@@ -1,0 +1,684 @@
+{
+  "schema": "tf-paired-mapping-report-v2",
+  "target": "solar-sail",
+  "profileName": "terminal-nova",
+  "profileVersion": "0.1.0",
+  "sourceSha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf",
+  "sourceVerification": "source-bytes",
+  "canonicalDigest": "9711b4ba1e4183f313b4ecb941e50e826654574b08fedeb6361cba76f890c078",
+  "adapter": {
+    "name": "@knowledge-forge-ai/theme-forge-solar-sail/paired-v2",
+    "version": "0.2.0"
+  },
+  "compiler": {
+    "name": "@knowledge-forge-ai/theme-forge-solar-sail",
+    "version": "0.3.0"
+  },
+  "options": {
+    "sourceProfileSha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf"
+  },
+  "entries": [
+    {
+      "sourcePath": "color.dark.border",
+      "sourceValue": "#50535d",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.border",
+      "targetValue": "#50535d"
+    },
+    {
+      "sourcePath": "color.dark.canvas",
+      "sourceValue": "#111318",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.background",
+      "targetValue": "#111318"
+    },
+    {
+      "sourcePath": "color.dark.canvasText",
+      "sourceValue": "#eee9e3",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.foreground",
+      "targetValue": "#eee9e3"
+    },
+    {
+      "sourcePath": "color.dark.danger",
+      "sourceValue": "#f87171",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.destructive",
+      "targetValue": "#f87171"
+    },
+    {
+      "sourcePath": "color.dark.dangerText",
+      "sourceValue": "#111318",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.destructiveForeground",
+      "targetValue": "#111318"
+    },
+    {
+      "sourcePath": "color.dark.elevatedSurface",
+      "sourceValue": "#191c23",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.popover",
+      "targetValue": "#191c23"
+    },
+    {
+      "sourcePath": "color.dark.elevatedSurfaceText",
+      "sourceValue": "#eee9e3",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.popoverForeground",
+      "targetValue": "#eee9e3"
+    },
+    {
+      "sourcePath": "color.dark.fieldBorder",
+      "sourceValue": "#50535d",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.input",
+      "targetValue": "#50535d"
+    },
+    {
+      "sourcePath": "color.dark.focus",
+      "sourceValue": "#69d3e4",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.ring",
+      "targetValue": "#69d3e4"
+    },
+    {
+      "sourcePath": "color.dark.highlight",
+      "sourceValue": "#ff8a3d",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.accent",
+      "targetValue": "#ff8a3d"
+    },
+    {
+      "sourcePath": "color.dark.highlightText",
+      "sourceValue": "#111318",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.accentForeground",
+      "targetValue": "#111318"
+    },
+    {
+      "sourcePath": "color.dark.mutedSurface",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.muted",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "color.dark.mutedText",
+      "sourceValue": "#b9b4ad",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.mutedForeground",
+      "targetValue": "#b9b4ad"
+    },
+    {
+      "sourcePath": "color.dark.primaryAction",
+      "sourceValue": "#69d3e4",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.primary",
+      "targetValue": "#69d3e4"
+    },
+    {
+      "sourcePath": "color.dark.primaryActionText",
+      "sourceValue": "#111318",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.primaryForeground",
+      "targetValue": "#111318"
+    },
+    {
+      "sourcePath": "color.dark.secondaryAction",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.secondary",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "color.dark.secondaryActionText",
+      "sourceValue": "#eee9e3",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.secondaryForeground",
+      "targetValue": "#eee9e3"
+    },
+    {
+      "sourcePath": "color.dark.selection",
+      "sourceValue": "#14333c",
+      "classification": "unsupported",
+      "reason": "No native representation in this adapter"
+    },
+    {
+      "sourcePath": "color.dark.selectionText",
+      "sourceValue": "#c0f0f5",
+      "classification": "unsupported",
+      "reason": "No native representation in this adapter"
+    },
+    {
+      "sourcePath": "color.dark.surface",
+      "sourceValue": "#191c23",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.card",
+      "targetValue": "#191c23"
+    },
+    {
+      "sourcePath": "color.dark.surfaceText",
+      "sourceValue": "#eee9e3",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.cardForeground",
+      "targetValue": "#eee9e3"
+    },
+    {
+      "sourcePath": "color.light.border",
+      "sourceValue": "#9d9187",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.border",
+      "targetValue": "#9d9187"
+    },
+    {
+      "sourcePath": "color.light.canvas",
+      "sourceValue": "#fff8f0",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.background",
+      "targetValue": "#fff8f0"
+    },
+    {
+      "sourcePath": "color.light.canvasText",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.foreground",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "color.light.danger",
+      "sourceValue": "#b42318",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.destructive",
+      "targetValue": "#b42318"
+    },
+    {
+      "sourcePath": "color.light.dangerText",
+      "sourceValue": "#ffffff",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.destructiveForeground",
+      "targetValue": "#ffffff"
+    },
+    {
+      "sourcePath": "color.light.elevatedSurface",
+      "sourceValue": "#fffdfa",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.popover",
+      "targetValue": "#fffdfa"
+    },
+    {
+      "sourcePath": "color.light.elevatedSurfaceText",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.popoverForeground",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "color.light.fieldBorder",
+      "sourceValue": "#9d9187",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.input",
+      "targetValue": "#9d9187"
+    },
+    {
+      "sourcePath": "color.light.focus",
+      "sourceValue": "#126475",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.ring",
+      "targetValue": "#126475"
+    },
+    {
+      "sourcePath": "color.light.highlight",
+      "sourceValue": "#9c3e0b",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.accent",
+      "targetValue": "#9c3e0b"
+    },
+    {
+      "sourcePath": "color.light.highlightText",
+      "sourceValue": "#fff8f0",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.accentForeground",
+      "targetValue": "#fff8f0"
+    },
+    {
+      "sourcePath": "color.light.mutedSurface",
+      "sourceValue": "#eee4da",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.muted",
+      "targetValue": "#eee4da"
+    },
+    {
+      "sourcePath": "color.light.mutedText",
+      "sourceValue": "#625a55",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.mutedForeground",
+      "targetValue": "#625a55"
+    },
+    {
+      "sourcePath": "color.light.primaryAction",
+      "sourceValue": "#126475",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.primary",
+      "targetValue": "#126475"
+    },
+    {
+      "sourcePath": "color.light.primaryActionText",
+      "sourceValue": "#fff8f0",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.primaryForeground",
+      "targetValue": "#fff8f0"
+    },
+    {
+      "sourcePath": "color.light.secondaryAction",
+      "sourceValue": "#eee4da",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.secondary",
+      "targetValue": "#eee4da"
+    },
+    {
+      "sourcePath": "color.light.secondaryActionText",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.secondaryForeground",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "color.light.selection",
+      "sourceValue": "#d8f2f3",
+      "classification": "unsupported",
+      "reason": "No native representation in this adapter"
+    },
+    {
+      "sourcePath": "color.light.selectionText",
+      "sourceValue": "#104552",
+      "classification": "unsupported",
+      "reason": "No native representation in this adapter"
+    },
+    {
+      "sourcePath": "color.light.surface",
+      "sourceValue": "#fffdfa",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.card",
+      "targetValue": "#fffdfa"
+    },
+    {
+      "sourcePath": "color.light.surfaceText",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.cardForeground",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "radius.control",
+      "sourceValue": "4px",
+      "classification": "consumed",
+      "reason": "Native CSS length",
+      "targetPath": "surfaces.radius",
+      "targetValue": "4px"
+    },
+    {
+      "sourcePath": "radius.surface",
+      "sourceValue": "4px",
+      "classification": "unsupported",
+      "reason": "No native representation in this adapter"
+    },
+    {
+      "sourcePath": "targetOverrides.loom.defaultAccent",
+      "sourceValue": "orange",
+      "classification": "target-specific",
+      "reason": "Retained for another adapter"
+    },
+    {
+      "sourcePath": "targetOverrides.loom.primaryFamily",
+      "sourceValue": "cyan",
+      "classification": "target-specific",
+      "reason": "Retained for another adapter"
+    },
+    {
+      "sourcePath": "targetOverrides.loom.secondaryFamily",
+      "sourceValue": "orange",
+      "classification": "target-specific",
+      "reason": "Retained for another adapter"
+    },
+    {
+      "sourcePath": "targetOverrides.loom.tokenSetKey",
+      "sourceValue": "forge-console",
+      "classification": "target-specific",
+      "reason": "Retained for another adapter"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.chart1",
+      "sourceValue": "#69d3e4",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.chart1",
+      "targetValue": "#69d3e4"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.chart2",
+      "sourceValue": "#ff8a3d",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.chart2",
+      "targetValue": "#ff8a3d"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.chart3",
+      "sourceValue": "#7dd3a0",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.chart3",
+      "targetValue": "#7dd3a0"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.chart4",
+      "sourceValue": "#b9b4ad",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.chart4",
+      "targetValue": "#b9b4ad"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.chart5",
+      "sourceValue": "#c6b2f3",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.chart5",
+      "targetValue": "#c6b2f3"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebar",
+      "sourceValue": "#15181e",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebar",
+      "targetValue": "#15181e"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarAccent",
+      "sourceValue": "#3a231c",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarAccent",
+      "targetValue": "#3a231c"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarAccentForeground",
+      "sourceValue": "#ffcfad",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarAccentForeground",
+      "targetValue": "#ffcfad"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarBorder",
+      "sourceValue": "#50535d",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarBorder",
+      "targetValue": "#50535d"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarForeground",
+      "sourceValue": "#eee9e3",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarForeground",
+      "targetValue": "#eee9e3"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarPrimary",
+      "sourceValue": "#69d3e4",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarPrimary",
+      "targetValue": "#69d3e4"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarPrimaryForeground",
+      "sourceValue": "#111318",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarPrimaryForeground",
+      "targetValue": "#111318"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.dark.sidebarRing",
+      "sourceValue": "#69d3e4",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.dark.sidebarRing",
+      "targetValue": "#69d3e4"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.chart1",
+      "sourceValue": "#126475",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.chart1",
+      "targetValue": "#126475"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.chart2",
+      "sourceValue": "#9c3e0b",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.chart2",
+      "targetValue": "#9c3e0b"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.chart3",
+      "sourceValue": "#146534",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.chart3",
+      "targetValue": "#146534"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.chart4",
+      "sourceValue": "#625a55",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.chart4",
+      "targetValue": "#625a55"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.chart5",
+      "sourceValue": "#524598",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.chart5",
+      "targetValue": "#524598"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebar",
+      "sourceValue": "#f5ede5",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebar",
+      "targetValue": "#f5ede5"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarAccent",
+      "sourceValue": "#ffeadc",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarAccent",
+      "targetValue": "#ffeadc"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarAccentForeground",
+      "sourceValue": "#612909",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarAccentForeground",
+      "targetValue": "#612909"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarBorder",
+      "sourceValue": "#9d9187",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarBorder",
+      "targetValue": "#9d9187"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarForeground",
+      "sourceValue": "#262a33",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarForeground",
+      "targetValue": "#262a33"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarPrimary",
+      "sourceValue": "#126475",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarPrimary",
+      "targetValue": "#126475"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarPrimaryForeground",
+      "sourceValue": "#fff8f0",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarPrimaryForeground",
+      "targetValue": "#fff8f0"
+    },
+    {
+      "sourcePath": "targetOverrides.solarSail.palette.light.sidebarRing",
+      "sourceValue": "#126475",
+      "classification": "consumed",
+      "reason": "Hex spelling projection",
+      "targetPath": "palette.light.sidebarRing",
+      "targetValue": "#126475"
+    },
+    {
+      "sourcePath": "typography.body.family",
+      "sourceValue": "system-ui",
+      "classification": "consumed",
+      "reason": "Native font role",
+      "targetPath": "typography.fontSans",
+      "targetValue": "system-ui"
+    },
+    {
+      "sourcePath": "typography.code.family",
+      "sourceValue": "monospace",
+      "classification": "consumed",
+      "reason": "Native font role",
+      "targetPath": "typography.fontMono",
+      "targetValue": "monospace"
+    },
+    {
+      "sourcePath": "typography.heading.family",
+      "sourceValue": "monospace",
+      "classification": "consumed",
+      "reason": "Native font role",
+      "targetPath": "typography.fontHeading",
+      "targetValue": "monospace"
+    },
+    {
+      "sourcePath": "typography.ui.family",
+      "sourceValue": "monospace",
+      "classification": "unsupported",
+      "reason": "No native representation in this adapter"
+    }
+  ],
+  "defaults": [],
+  "groups": [
+    {
+      "group": "color",
+      "applicable": true,
+      "reason": "Adapter supports a subset of this group; see supplied leaf dispositions"
+    },
+    {
+      "group": "typography",
+      "applicable": true,
+      "reason": "Adapter supports a subset of this group; see supplied leaf dispositions"
+    },
+    {
+      "group": "radius",
+      "applicable": true,
+      "reason": "Adapter supports a subset of this group; see supplied leaf dispositions"
+    },
+    {
+      "group": "spacing",
+      "applicable": false,
+      "reason": "No native representation for this group in this adapter"
+    },
+    {
+      "group": "elevation",
+      "applicable": true,
+      "reason": "Adapter supports a subset of this group; see supplied leaf dispositions"
+    },
+    {
+      "group": "focus",
+      "applicable": true,
+      "reason": "Adapter supports a subset of this group; see supplied leaf dispositions"
+    },
+    {
+      "group": "code",
+      "applicable": false,
+      "reason": "No native representation for this group in this adapter"
+    },
+    {
+      "group": "reading",
+      "applicable": false,
+      "reason": "No native representation for this group in this adapter"
+    },
+    {
+      "group": "navigation",
+      "applicable": false,
+      "reason": "No native representation for this group in this adapter"
+    }
+  ],
+  "summary": {
+    "totalSemanticLeaves": 78,
+    "consumed": 68,
+    "normalized": 0,
+    "overridden": 0,
+    "targetSpecific": 4,
+    "unsupported": 6,
+    "generatedDefaultsCount": 0
+  },
+  "digest": "ec9795f43eb74cf19e66bd6b0ff88d2efbcb09408cb3f9883900b417c406f7ed"
+}

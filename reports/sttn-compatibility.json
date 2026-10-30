@@ -1,0 +1,807 @@
+{
+  "schema": "cttn.sttn-compatibility-v1",
+  "sttnSourceSha256": "436e278cdbe3a37e06048504df3897d65230318f17b7ebd754060c2866703324",
+  "scope": "Resolved cyan/orange colour roles. Name/version excluded; all other catalog structure is preserved except token references and appended paired tokens.",
+  "primary": "cyan",
+  "defaultAccent": "orange",
+  "codePresentation": "Retained from STTN; separately returned adapter syntax is not attached",
+  "targetDivergences": [
+    "Solar-only danger, field, chart and sidebar roles",
+    "Loom syntax/chrome model is reported but STTN codePresentation is retained",
+    "CTTN primary cyan; Loom default accent orange"
+  ],
+  "rows": [
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "accent-base",
+      "sttn": "#126475",
+      "cttn": "#126475",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "accent-high",
+      "sttn": "#104552",
+      "cttn": "#104552",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "accent-low",
+      "sttn": "#d8f2f3",
+      "cttn": "#d8f2f3",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "body",
+      "sttn": "#262a33",
+      "cttn": "#262a33",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "border",
+      "sttn": "#9d9187",
+      "cttn": "#9d9187",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "card",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "code",
+      "sttn": "#faf1e8",
+      "cttn": "#faf1e8",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "focus",
+      "sttn": "#126475",
+      "cttn": "#126475",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "hairline",
+      "sttn": "#d1c4b8",
+      "cttn": "#9d9187",
+      "outcome": "divergent",
+      "reason": "Paired border maps to both hairline and border; CTTN chooses STTN border"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "header",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "inline-code",
+      "sttn": "#eee4da",
+      "cttn": "#eee4da",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "inverted",
+      "sttn": "#fff8f0",
+      "cttn": "#fff8f0",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "link",
+      "sttn": "#126475",
+      "cttn": "#126475",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "muted",
+      "sttn": "#625a55",
+      "cttn": "#625a55",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "navigation",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "page",
+      "sttn": "#fff8f0",
+      "cttn": "#fff8f0",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "panel",
+      "sttn": "#eee4da",
+      "cttn": "#eee4da",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "raised",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "secondary",
+      "sttn": "#33343b",
+      "cttn": "#33343b",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "selection-background",
+      "sttn": "#d8f2f3",
+      "cttn": "#d8f2f3",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "selection-text",
+      "sttn": "#104552",
+      "cttn": "#104552",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "light",
+      "role": "sidebar",
+      "sttn": "#f5ede5",
+      "cttn": "#f5ede5",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "accent-base",
+      "sttn": "#69d3e4",
+      "cttn": "#69d3e4",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "accent-high",
+      "sttn": "#c0f0f5",
+      "cttn": "#c0f0f5",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "accent-low",
+      "sttn": "#14333c",
+      "cttn": "#14333c",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "body",
+      "sttn": "#eee9e3",
+      "cttn": "#eee9e3",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "border",
+      "sttn": "#50535d",
+      "cttn": "#50535d",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "card",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "code",
+      "sttn": "#15181e",
+      "cttn": "#15181e",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "focus",
+      "sttn": "#69d3e4",
+      "cttn": "#69d3e4",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "hairline",
+      "sttn": "#393d48",
+      "cttn": "#50535d",
+      "outcome": "divergent",
+      "reason": "Paired border maps to both hairline and border; CTTN chooses STTN border"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "header",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "inline-code",
+      "sttn": "#262a33",
+      "cttn": "#262a33",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "inverted",
+      "sttn": "#111318",
+      "cttn": "#111318",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "link",
+      "sttn": "#69d3e4",
+      "cttn": "#69d3e4",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "muted",
+      "sttn": "#b9b4ad",
+      "cttn": "#b9b4ad",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "navigation",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "page",
+      "sttn": "#111318",
+      "cttn": "#111318",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "panel",
+      "sttn": "#262a33",
+      "cttn": "#262a33",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "raised",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "secondary",
+      "sttn": "#ddd7d0",
+      "cttn": "#ddd7d0",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "selection-background",
+      "sttn": "#14333c",
+      "cttn": "#14333c",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "selection-text",
+      "sttn": "#c0f0f5",
+      "cttn": "#c0f0f5",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "cyan",
+      "mode": "dark",
+      "role": "sidebar",
+      "sttn": "#15181e",
+      "cttn": "#15181e",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "accent-base",
+      "sttn": "#9c3e0b",
+      "cttn": "#9c3e0b",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "accent-high",
+      "sttn": "#612909",
+      "cttn": "#612909",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "accent-low",
+      "sttn": "#ffeadc",
+      "cttn": "#ffeadc",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "body",
+      "sttn": "#262a33",
+      "cttn": "#262a33",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "border",
+      "sttn": "#9d9187",
+      "cttn": "#9d9187",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "card",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "code",
+      "sttn": "#faf1e8",
+      "cttn": "#faf1e8",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "focus",
+      "sttn": "#9c3e0b",
+      "cttn": "#9c3e0b",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "hairline",
+      "sttn": "#d1c4b8",
+      "cttn": "#d1c4b8",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "header",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "inline-code",
+      "sttn": "#eee4da",
+      "cttn": "#eee4da",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "inverted",
+      "sttn": "#fff8f0",
+      "cttn": "#fff8f0",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "link",
+      "sttn": "#9c3e0b",
+      "cttn": "#9c3e0b",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "muted",
+      "sttn": "#625a55",
+      "cttn": "#625a55",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "navigation",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "page",
+      "sttn": "#fff8f0",
+      "cttn": "#fff8f0",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "panel",
+      "sttn": "#eee4da",
+      "cttn": "#eee4da",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "raised",
+      "sttn": "#fffdfa",
+      "cttn": "#fffdfa",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "secondary",
+      "sttn": "#33343b",
+      "cttn": "#33343b",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "selection-background",
+      "sttn": "#ffeadc",
+      "cttn": "#ffeadc",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "selection-text",
+      "sttn": "#612909",
+      "cttn": "#612909",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "light",
+      "role": "sidebar",
+      "sttn": "#f5ede5",
+      "cttn": "#f5ede5",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "accent-base",
+      "sttn": "#ff8a3d",
+      "cttn": "#ff8a3d",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "accent-high",
+      "sttn": "#ffcfad",
+      "cttn": "#ffcfad",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "accent-low",
+      "sttn": "#3a231c",
+      "cttn": "#3a231c",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "body",
+      "sttn": "#eee9e3",
+      "cttn": "#eee9e3",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "border",
+      "sttn": "#50535d",
+      "cttn": "#50535d",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "card",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "code",
+      "sttn": "#15181e",
+      "cttn": "#15181e",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "focus",
+      "sttn": "#ff8a3d",
+      "cttn": "#ff8a3d",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "hairline",
+      "sttn": "#393d48",
+      "cttn": "#393d48",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "header",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "inline-code",
+      "sttn": "#262a33",
+      "cttn": "#262a33",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "inverted",
+      "sttn": "#111318",
+      "cttn": "#111318",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "link",
+      "sttn": "#ff8a3d",
+      "cttn": "#ff8a3d",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "muted",
+      "sttn": "#b9b4ad",
+      "cttn": "#b9b4ad",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "navigation",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "page",
+      "sttn": "#111318",
+      "cttn": "#111318",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "panel",
+      "sttn": "#262a33",
+      "cttn": "#262a33",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "raised",
+      "sttn": "#191c23",
+      "cttn": "#191c23",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "secondary",
+      "sttn": "#ddd7d0",
+      "cttn": "#ddd7d0",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "selection-background",
+      "sttn": "#3a231c",
+      "cttn": "#3a231c",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "selection-text",
+      "sttn": "#ffcfad",
+      "cttn": "#ffcfad",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    },
+    {
+      "family": "orange",
+      "mode": "dark",
+      "role": "sidebar",
+      "sttn": "#15181e",
+      "cttn": "#15181e",
+      "outcome": "equal",
+      "reason": "Resolved STTN value preserved"
+    }
+  ]
+}

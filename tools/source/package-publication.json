@@ -1,0 +1,14 @@
+{
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova.git"
+  },
+  "homepage": "https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova#readme",
+  "bugs": {
+    "url": "https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova/issues"
+  }
+}

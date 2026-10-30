@@ -1,0 +1,36 @@
+{
+  "schema": "cttn.build-receipt-v1",
+  "packageName": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
+  "packageVersion": "0.1.0",
+  "sourceInventoryDigest": "23997999be513f348a15f9efa01c4335d4575bbd78c1ae3e33d8ecbd95e6a0c6",
+  "provenanceSha256": "d77555e501ffe0b54c36689e0cca70d03a7573b00f5aece195925bdd6f1f6ba4",
+  "compiler": {
+    "package": "typescript",
+    "version": "7.0.2",
+    "command": "tsc -p tsconfig.json",
+    "tsconfigSha256": "77f8fb7655ef967872724b432e80451ffe81298f1e561d255a66652a70bc8c0d"
+  },
+  "files": [
+    {
+      "path": "dist/index.d.ts",
+      "size": 1477,
+      "sha256": "ecbb27cd7762fe054765d190e6d48c4f7963b14bcf024eb69fba29215cae263f"
+    },
+    {
+      "path": "dist/index.js",
+      "size": 3093,
+      "sha256": "f6ee17fc546e73f1b25790e7f4b776615831f36d7491ae9c9d543bfed1badb10"
+    },
+    {
+      "path": "dist/status.d.ts",
+      "size": 1224,
+      "sha256": "f2bac29396c94cc507d8c5f4e366d1b802bf75f2610181764234b93d2ddcdd6a"
+    },
+    {
+      "path": "dist/status.js",
+      "size": 675,
+      "sha256": "bd9dc9c301ebcb21938b853ae52a952dd19b744ffb3482ed70e1ab1d00d85821"
+    }
+  ],
+  "inventoryDigest": "2f8835622d5c664ac5065b46db0530d1c942621a196ade586bf9b999536d63b8"
+}

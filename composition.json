@@ -1,0 +1,210 @@
+{
+  "schema": "cttn.composition-v2",
+  "sourceProfileSha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf",
+  "canonicalDigest": "9711b4ba1e4183f313b4ecb941e50e826654574b08fedeb6361cba76f890c078",
+  "sttnSourceSha256": "436e278cdbe3a37e06048504df3897d65230318f17b7ebd754060c2866703324",
+  "generatorProvenanceSha256": "5647d59ad76af5cd183b8f806ed17b734072e200a4ce9df2c8664d76ccd7ab3a",
+  "composer": {
+    "package": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
+    "version": "0.1.0",
+    "role": "standalone-public-producer",
+    "tool": "tools/compose-lib.mjs",
+    "sourceSha256": "215f3f850e71137539ac86a031cd8ea7c3efb873a3c6136845b02ef8c723be50",
+    "producerInventoryDigest": "808846f4a1be1cba43bbc9ff52b6a8ce24ba4d428676c14b0987d9c57af5cd0e"
+  },
+  "producerInventory": {
+    "files": [
+      {
+        "path": "tools/compose-lib.mjs",
+        "size": 11843,
+        "sha256": "215f3f850e71137539ac86a031cd8ea7c3efb873a3c6136845b02ef8c723be50"
+      },
+      {
+        "path": "tools/compose.mjs",
+        "size": 960,
+        "sha256": "eadb4d6bace481ff46384f1de8222ff19770903c21b3408463538d072e169a81"
+      },
+      {
+        "path": "tools/source/engines.json",
+        "size": 1040,
+        "sha256": "9334e4df9d0d2bdca871a3a537ff15a5108de81b79a14839aa7b61250170830d"
+      },
+      {
+        "path": "tools/source/legal/CLA.md",
+        "size": 2655,
+        "sha256": "139755fce7f99631f6d14f4ae78dbdecd3093df8259819cb80ff4f268cdf166d"
+      },
+      {
+        "path": "tools/source/legal/COMMERCIAL-LICENSE.md",
+        "size": 943,
+        "sha256": "9af80d5377cf29f76fda55b7ec8b5f16965366420639d2f81653a7d685dd073b"
+      },
+      {
+        "path": "tools/source/legal/CONTRIBUTING.md",
+        "size": 1502,
+        "sha256": "370542c2ac22e5ad045f9d75b11bf603afb4cdb3c8d4c16721b33b601a3e8c9a"
+      },
+      {
+        "path": "tools/source/legal/LICENSE",
+        "size": 34460,
+        "sha256": "62eef07fc3ad238dd889ff98cf9ed87b3ef0f421579b6945f87ec37c608afb62"
+      },
+      {
+        "path": "tools/source/legal/NOTICE",
+        "size": 614,
+        "sha256": "4b8edccf001fdfd460718d88d42ea0870110bfa2f4d9827c113b862694a79402"
+      },
+      {
+        "path": "tools/source/legal/pull_request_template.md",
+        "size": 364,
+        "sha256": "75b1a231a66a606228a4180751800191cf3e03769ef6c9a5cf989d6f4afda6f0"
+      },
+      {
+        "path": "tools/source/package-metadata.json",
+        "size": 279,
+        "sha256": "b7052821c0149fb39a279d8d6bbdbbc445cdedc2c6c3aeefd26dfddb99f05e7f"
+      },
+      {
+        "path": "tools/source/package-publication.json",
+        "size": 418,
+        "sha256": "beca7995f49c2f579da4e0f6240d49b75b47432b3639f9125e8af3c4f18e2aa7"
+      },
+      {
+        "path": "tools/source/README.md",
+        "size": 2952,
+        "sha256": "4a27fffebc4baf64f712f44b82926d85b9932e72aa28d922cf6edc043e1d2541"
+      },
+      {
+        "path": "tools/source/status.ts",
+        "size": 723,
+        "sha256": "99deeb6d4d9ceb2dfdbb018603ba720a01249c61136aeea0a6136fa8dce0aca3"
+      },
+      {
+        "path": "tools/source/sttn/v0.3/terminal-nova.theme.json",
+        "size": 11161,
+        "sha256": "e446d4bf84f2553662f38bb30fabda13f1238e2a2e0c97825ff1ad26b8d007e5"
+      },
+      {
+        "path": "tools/source/sttn/v0.4/terminal-nova.theme.json",
+        "size": 11161,
+        "sha256": "436e278cdbe3a37e06048504df3897d65230318f17b7ebd754060c2866703324"
+      },
+      {
+        "path": "tools/source/terminal-nova.profile.json",
+        "size": 3123,
+        "sha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf"
+      }
+    ],
+    "digest": "808846f4a1be1cba43bbc9ff52b6a8ce24ba4d428676c14b0987d9c57af5cd0e"
+  },
+  "engines": [
+    {
+      "package": "@knowledge-forge-ai/theme-forge-solar-sail",
+      "version": "0.3.0",
+      "sha256": "65070c3478a1d55476c1b09fbe1dcadfdf7c3d3aa54a154bc9ac9e299411f415",
+      "integrity": "sha512-UFXyo3upUlj7x7eCMn9Aay9OlvnDhNZ4recQhl9YWA2OSAKnjNQGJZBfbYS6Q0XUO+nZY+oEG1Nvu3xAOuo8vg=="
+    },
+    {
+      "package": "@knowledge-forge-ai/theme-forge-stellar-loom",
+      "version": "0.5.0",
+      "sha256": "4e7a7d436c09ba111f5dca8101876c6e085ad15859d96bab8f728c5669880b5f",
+      "integrity": "sha512-1tgZbcrBCxLZj0rkhCX7XnEVUCAmecS2FefY7TPnjP9o82vSjKnj3h6g3DX/QT7u3CWn+pXfPzQokrlrp6Q8iQ=="
+    }
+  ],
+  "counterpartSha256": "1c0a90c7aba31ff3daf794ec1ecc8bb64edf081e7fcafb8c62d4c218c586e294",
+  "changes": [
+    {
+      "path": ".github/pull_request_template.md",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "75b1a231a66a606228a4180751800191cf3e03769ef6c9a5cf989d6f4afda6f0"
+    },
+    {
+      "path": "CLA.md",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "139755fce7f99631f6d14f4ae78dbdecd3093df8259819cb80ff4f268cdf166d"
+    },
+    {
+      "path": "COMMERCIAL-LICENSE.md",
+      "action": "replaced",
+      "beforeSha256": "75abcbbd51ba409bfadc0ea775b173928715a6e6761c1a4271d16a77fe362291",
+      "afterSha256": "9af80d5377cf29f76fda55b7ec8b5f16965366420639d2f81653a7d685dd073b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "370542c2ac22e5ad045f9d75b11bf603afb4cdb3c8d4c16721b33b601a3e8c9a"
+    },
+    {
+      "path": "loom-counterpart/terminal-nova.loom.theme.json",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "1c0a90c7aba31ff3daf794ec1ecc8bb64edf081e7fcafb8c62d4c218c586e294"
+    },
+    {
+      "path": "NOTICE",
+      "action": "replaced",
+      "beforeSha256": "eff05b5c04e18b0d12d6ddf523fddc4d39c0d9af6349f6fd126519e523dba942",
+      "afterSha256": "4b8edccf001fdfd460718d88d42ea0870110bfa2f4d9827c113b862694a79402"
+    },
+    {
+      "path": "package.json",
+      "action": "replaced",
+      "beforeSha256": "acf6e3943562298ac940010e4c145679a99264b05c329df7e557594db4ce94f2",
+      "afterSha256": "2b76c1627c7e213be456a2c4be7ed398f2628e40a488d141a011791bf9a943df"
+    },
+    {
+      "path": "README.md",
+      "action": "replaced",
+      "beforeSha256": "267e5aa25d7f140632ba5e269d56fb33de6d6b0a62004c7a0492d58601107e95",
+      "afterSha256": "4a27fffebc4baf64f712f44b82926d85b9932e72aa28d922cf6edc043e1d2541"
+    },
+    {
+      "path": "reports/solar-sail.mapping.json",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "ae7d89e5935982d7b8bfce6511390cbb99e675c6a9d3244062456f7d9a5ccd13"
+    },
+    {
+      "path": "reports/solar-sail.provenance.json",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "5647d59ad76af5cd183b8f806ed17b734072e200a4ce9df2c8664d76ccd7ab3a"
+    },
+    {
+      "path": "reports/stellar-loom.mapping.json",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "b5cd306511ad70f1478bee7e78cfe691605ae2842923d015f12e1ceb7c46aea1"
+    },
+    {
+      "path": "reports/sttn-compatibility.json",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "21554dda3f27730b4d7fae4f9ff1b4c93254ac9a62cdb3e6b8e9ce652c3db38e"
+    },
+    {
+      "path": "src/index.ts",
+      "action": "replaced",
+      "beforeSha256": "3616c1260d44d9f49fa5b50aa577c1f90ec846ff6bbf54ac8a166e10c221d6b2",
+      "afterSha256": "cb03d5028b554ff77e9b90a51a26cd7fa7c41d21470bf390a9034c53cfd834e1"
+    },
+    {
+      "path": "src/status.ts",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "99deeb6d4d9ceb2dfdbb018603ba720a01249c61136aeea0a6136fa8dce0aca3"
+    }
+  ],
+  "inventoryExcludes": [
+    "composition.json",
+    "provenance.json"
+  ],
+  "coordinates": {
+    "npm": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
+    "repository": "Knowledge-Forge-AI/shadcn-theme-terminal-nova",
+    "access": "public"
+  }
+}
