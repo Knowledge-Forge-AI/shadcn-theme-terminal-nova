@@ -23,7 +23,7 @@ const parse = (files, path) => {
 export const BUILD_RECEIPT = "build-receipt.json";
 export const ENGINE_PACKAGES = ["@knowledge-forge-ai/theme-forge-solar-sail", "@knowledge-forge-ai/theme-forge-stellar-loom"];
 /** Repository infrastructure that is neither composed, compiled nor a producer input. */
-export const SUPPORT_FILES = [".gitignore", "test/composition.test.mjs", "test/package.test.mjs", "test/tamper.test.mjs",
+export const SUPPORT_FILES = [".github/workflows/verify.yml", ".gitignore", "test/composition.test.mjs", "test/package.test.mjs", "test/tamper.test.mjs",
   "tools/build.mjs", "tools/qualify-package.mjs", "tools/toolchain.json", "tools/verify-lib.mjs", "tools/verify.mjs"];
 const IGNORED_ROOTS = new Set([".git", "node_modules"]);
 const LEAK_PATTERNS = [/\/(Users|home|private\/var)\/[A-Za-z]/, /agent[-]scratch/, /triad[-]20\d\d/, /[.]serena\b/, /-----BEGIN [A-Z ]*PRIVATE KEY/,
