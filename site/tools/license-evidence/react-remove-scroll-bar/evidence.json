@@ -1,0 +1,23 @@
+{
+  "schema": "cttn.license-evidence.v1",
+  "package": {
+    "name": "react-remove-scroll-bar",
+    "version": "2.3.8",
+    "license": "MIT",
+    "integrity": "sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q=="
+  },
+  "upstream": {
+    "repository": "git+https://github.com/theKashey/react-remove-scroll-bar.git",
+    "sourceBlobSha1": "7c08c3990396ecefd90f99ff5d9a34f26f5b5616",
+    "sourcePath": "LICENSE",
+    "publisherGitHead": null,
+    "publisherGitHeadStatus": "unavailable",
+    "releaseRef": null,
+    "releaseRefStatus": "unavailable"
+  },
+  "admission": {
+    "registrySignatureVerified": true,
+    "registrySignatureKeyId": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+    "registryIntegrity": "sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q=="
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">CTTN — Shadcn Theme Terminal Nova</title>
+  <desc id="desc">Original text-only social preview for the CTTN component consumer</desc>
+  <rect width="1200" height="630" fill="#261633" />
+  <text x="96" y="166" fill="#f3d394" font-family="ui-sans-serif,system-ui,sans-serif" font-size="42" font-weight="700" letter-spacing="7">CTTN</text>
+  <text x="96" y="252" fill="#fff8ef" font-family="ui-sans-serif,system-ui,sans-serif" font-size="58" font-weight="700">Shadcn Theme</text>
+  <text x="96" y="322" fill="#fff8ef" font-family="ui-sans-serif,system-ui,sans-serif" font-size="58" font-weight="700">Terminal Nova</text>
+  <text x="96" y="408" fill="#e3cfe9" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28">Shared components · clear roles · paired appearances</text>
+  <text x="96" y="530" fill="#f3d394" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" letter-spacing="3">KNOWLEDGE FORGE AI</text>
+</svg>

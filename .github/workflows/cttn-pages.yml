@@ -1,0 +1,193 @@
+name: CTTN Pages
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/cttn-pages.yml"
+      - "site/**"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cttn-pages.yml"
+      - "site/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cttn-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate-and-build:
+    name: Validate and build CTTN site
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      NPM_CONFIG_CACHE: ${{ github.workspace }}/.cttn-npm-cache
+      NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.cttn-empty-user.npmrc
+      NPM_CONFIG_GLOBALCONFIG: ${{ github.workspace }}/.cttn-empty-global.npmrc
+      NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
+      NPM_CONFIG_IGNORE_SCRIPTS: "true"
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: 22.23.4
+
+      - name: Create fresh job-owned npm state
+        run: |
+          test ! -e "$GITHUB_WORKSPACE/.cttn-npm-cache"
+          test ! -e "$GITHUB_WORKSPACE/.cttn-empty-user.npmrc"
+          test ! -e "$GITHUB_WORKSPACE/.cttn-empty-global.npmrc"
+          mkdir "$GITHUB_WORKSPACE/.cttn-npm-cache"
+          : > "$GITHUB_WORKSPACE/.cttn-empty-user.npmrc"
+          : > "$GITHUB_WORKSPACE/.cttn-empty-global.npmrc"
+
+      # This Ubuntu job installs and executes the lock's Linux build-tool
+      # bindings. The class remains held and unqualified; this is not Linux or
+      # native qualification and is not a deployment gate.
+      - name: Install the approved site lock with isolated npm configuration
+        run: >-
+          npm ci --ignore-scripts --prefix site
+          --registry=https://registry.npmjs.org/
+          --cache="$GITHUB_WORKSPACE/.cttn-npm-cache"
+          --userconfig="$GITHUB_WORKSPACE/.cttn-empty-user.npmrc"
+          --globalconfig="$GITHUB_WORKSPACE/.cttn-empty-global.npmrc"
+
+      - name: Require source license and notice records
+        run: |
+          test -f site/LICENSE
+          test -f site/THIRD-PARTY-NOTICES.md
+          test -f site/SOURCE-ASSETS.json
+
+      - name: Require the correction-2 Linux native-admission helper projection
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from "node:fs";
+          import { createHash } from "node:crypto";
+          const expected = [
+            ["site/tools/native-build-preflight.cjs", 518, "33fd3c520ba02be7176f6c02f5d27d14abeb588d0bc61f0c352645e437519fdd"],
+            ["site/tools/native-build-preflight-lib.cjs", 6425, "8a1b5913be69424d0ccf155cccbde86d67cded98608634d5869b2973ae6f81e3"],
+            ["site/tools/test/native-build-preflight.node-test.cjs", 9993, "5b9d9c54db154f6a9efc553cae9a1b13922c190aa97f1585f4ef86121c4a2787"],
+          ];
+          for (const [file, bytes, sha256] of expected) {
+            const data = readFileSync(file);
+            const actual = createHash("sha256").update(data).digest("hex");
+            if (data.length !== bytes || actual !== sha256) {
+              throw new Error(`native admission helper projection mismatch: ${file}`);
+            }
+          }
+          NODE
+
+      # This is intentionally outside Vitest's *.test.cjs discovery pattern.
+      - name: Run the projected native-preflight source tests explicitly
+        working-directory: site
+        run: node --test tools/test/native-build-preflight.node-test.cjs
+
+      - name: Verify the accepted appearance projection
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from "node:fs";
+          const expectedDigest = "d9f94a7f5ce0730098d840e409ca588caefc2e05c45fbec02d749d25f418fb51";
+          const catalog = JSON.parse(readFileSync("site/public/appearances/catalog.json", "utf8"));
+          const provenance = JSON.parse(readFileSync("site/public/appearances/provenance.json", "utf8"));
+          const ids = ["terminal-nova", "nebular", "developer", "graphic-designer", "anime", "gamer"];
+          if (provenance.inventoryDigest !== expectedDigest || catalog.families?.map(({ id }) => id).join("/") !== ids.join("/")) {
+            throw new Error("CTTN appearance projection does not match the accepted inventory");
+          }
+          for (const id of ids) {
+            if (!readFileSync(`site/public/appearances/${id}/cttn.css`, "utf8")) throw new Error(`Missing CTTN appearance: ${id}`);
+            if (!readFileSync(`site/public/appearances/profiles/${id}.profile.json`, "utf8")) throw new Error(`Missing CTTN profile: ${id}`);
+          }
+          NODE
+
+      # The Linux mapping is diagnostic source evidence only. It does not
+      # qualify the hosted runner's native class or authorize deployment.
+      - name: Record the bounded Linux native-admission receipt
+        working-directory: site
+        run: |
+          node --require ./tools/native-build-preflight.cjs <<'NODE'
+          const fs = require("node:fs");
+          const receipt = require("./tools/native-build-preflight.cjs");
+          const expectedPackages = [
+            "@tailwindcss/oxide-linux-x64-gnu",
+            "lightningcss-linux-x64-gnu",
+            "@rolldown/binding-linux-x64-gnu",
+          ];
+          if (receipt.schema !== "cttn.native-build-preflight.v1" || receipt.target !== "linux-x64" || receipt.wasiFallbackSelected || receipt.forceWasiAbsent !== true || receipt.fseventsLoaded !== false || receipt.oxideUsesSelectedNativeScanner !== true || receipt.lightningNativeLoaded !== true || receipt.rolldownNativeLoaded !== true || receipt.typescriptPlatformMetadataMatches !== true || receipt.binaries?.length !== 3) {
+            throw new Error("Linux native-admission receipt is not the fixed x64/glibc native-binding class");
+          }
+          if (receipt.binaries.map(({ package: name }) => name).join("/") !== expectedPackages.join("/")) {
+            throw new Error("Linux native-admission package mapping is not fixed");
+          }
+          const serialized = JSON.stringify(receipt);
+          fs.writeFileSync(`${process.env.RUNNER_TEMP}/cttn-native-admission.json`, `${serialized}\n`);
+          console.log(serialized);
+          NODE
+
+      # NODE_OPTIONS applies only to site processes. npm ci and npm audit above
+      # are deliberately unpreloaded. npm-wrapper preload equivalence is not
+      # proven by the direct source test and remains a hosted review boundary.
+      - name: Typecheck the site from its own working directory
+        working-directory: site
+        env:
+          NODE_OPTIONS: "--require=${{ github.workspace }}/site/tools/native-build-preflight.cjs"
+        run: npm exec --no -- tsc --noEmit
+
+      - name: Run the site tests from its own working directory
+        working-directory: site
+        env:
+          NODE_OPTIONS: "--require=${{ github.workspace }}/site/tools/native-build-preflight.cjs"
+        run: npm exec --no -- vitest run
+
+      - name: Build the site from its own working directory
+        working-directory: site
+        env:
+          NODE_OPTIONS: "--require=${{ github.workspace }}/site/tools/native-build-preflight.cjs"
+        run: npm exec --no -- vite build
+
+      - name: Audit site production dependencies with isolated npm configuration
+        run: >-
+          npm audit --omit=dev --prefix site
+          --registry=https://registry.npmjs.org/
+          --cache="$GITHUB_WORKSPACE/.cttn-npm-cache"
+          --userconfig="$GITHUB_WORKSPACE/.cttn-empty-user.npmrc"
+          --globalconfig="$GITHUB_WORKSPACE/.cttn-empty-global.npmrc"
+
+      - name: Check static entrypoints and generated notices
+        run: |
+          test -f site/dist/index.html
+          test -f site/dist/specimen.html
+          test -f site/dist/appearances/catalog.json
+          test -f site/dist/THIRD-PARTY-NOTICES.txt
+          test -f site/dist/third-party-modules.json
+
+      - name: Upload CTTN Pages artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        with:
+          path: site/dist
+
+  deploy:
+    name: Deploy CTTN Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate-and-build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the reviewed artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

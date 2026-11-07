@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+  --radius-md: var(--radius);
+  --radius-sm: calc(var(--radius) - 0.125rem);
+  --radius-xs: calc(var(--radius) - 0.25rem);
+}
+
+:where(:root) {
+  --background: #fff8f0;
+  --foreground: #262a33;
+  --card: #fffdf9;
+  --card-foreground: #262a33;
+  --popover: #fffdf9;
+  --popover-foreground: #262a33;
+  --primary: #126475;
+  --primary-foreground: #f5ffff;
+  --secondary: #eee7de;
+  --secondary-foreground: #262a33;
+  --muted: #f1ebe4;
+  --muted-foreground: #62656d;
+  --accent: #e5f1f1;
+  --accent-foreground: #0d4d5b;
+  --border: #d9d2c9;
+  --input: #c8c1b8;
+  --ring: #197f92;
+  --destructive: #a53c2f;
+  --destructive-foreground: #fff8f0;
+  --radius: 0.65rem;
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-heading: ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color-scheme: light;
+}
+
+:where(:root[data-family="nebular"]) {
+  --background: #f3f7fb;
+  --foreground: #16202b;
+  --card: #fbfdff;
+  --card-foreground: #16202b;
+  --popover: #fbfdff;
+  --popover-foreground: #16202b;
+  --primary: #205e82;
+  --primary-foreground: #f5fbff;
+  --secondary: #e2ebf2;
+  --secondary-foreground: #16202b;
+  --muted: #eaf0f5;
+  --muted-foreground: #5c6b78;
+  --accent: #dcecf3;
+  --accent-foreground: #17445e;
+  --border: #cbd8e2;
+  --input: #b8c8d4;
+  --ring: #2c789f;
+  --destructive: #a33f46;
+  --destructive-foreground: #fff7f7;
+}
+
+:where(:root[data-theme="dark"]) {
+  --background: #111318;
+  --foreground: #eee9e3;
+  --card: #191c22;
+  --card-foreground: #eee9e3;
+  --popover: #191c22;
+  --popover-foreground: #eee9e3;
+  --primary: #69d3e4;
+  --primary-foreground: #0f2227;
+  --secondary: #2a2f37;
+  --secondary-foreground: #eee9e3;
+  --muted: #20242b;
+  --muted-foreground: #afb4bb;
+  --accent: #1d3d46;
+  --accent-foreground: #b7edf4;
+  --border: #3b414a;
+  --input: #4b535e;
+  --ring: #7ce4f1;
+  --destructive: #e86c62;
+  --destructive-foreground: #260d0b;
+  color-scheme: dark;
+}
+
+:where(:root[data-family="nebular"][data-theme="dark"]) {
+  --background: #111923;
+  --foreground: #e6f0f6;
+  --card: #182430;
+  --card-foreground: #e6f0f6;
+  --popover: #182430;
+  --popover-foreground: #e6f0f6;
+  --primary: #80c8ee;
+  --primary-foreground: #0e2636;
+  --secondary: #293947;
+  --secondary-foreground: #e6f0f6;
+  --muted: #202f3c;
+  --muted-foreground: #a9bcc9;
+  --accent: #214354;
+  --accent-foreground: #c0e8fa;
+  --border: #3c5262;
+  --input: #526878;
+  --ring: #91d6f5;
+  --destructive: #ec7679;
+  --destructive-foreground: #2a1116;
+}
+
+html {
+  min-width: 320px;
+  background-color: var(--background);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  line-height: 1.5;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+.specimen-shell {
+  min-height: 100vh;
+  padding: 1rem;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+.specimen-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 40rem;
+  padding: 0.25rem 0.25rem 0.9rem;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground);
+  font-size: 0.74rem;
+}
+
+.specimen-header span {
+  color: var(--muted-foreground);
+}
+
+.specimen-card {
+  max-width: 40rem;
+  margin: 1rem auto 0;
+  border-color: var(--border);
+  background-color: var(--card);
+  color: var(--card-foreground);
+}
+
+.specimen-card [data-slot="card-header"] {
+  border-bottom: 1px solid var(--border);
+}
+
+.specimen-card [data-slot="card-footer"] {
+  gap: 0.55rem;
+  border-top: 1px solid var(--border);
+}
+
+.specimen-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.specimen-form label {
+  align-self: end;
+  color: var(--card-foreground);
+  font-size: 0.75rem;
+  font-weight: 620;
+}
+
+.specimen-form input,
+.specimen-select {
+  width: 100%;
+}
+
+.specimen-select {
+  min-height: 2.25rem;
+  padding: 0.42rem 0.62rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.8rem;
+}
+
+.specimen-card table {
+  width: 100%;
+  min-width: 20rem;
+}
+
+.specimen-card [data-state="selected"] td {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.specimen-card [data-slot="table-container"] {
+  overflow-x: auto;
+  scrollbar-color: var(--border) transparent;
+}
+
+.specimen-note {
+  max-width: 40rem;
+  margin: 0.9rem auto 0;
+  color: var(--muted-foreground);
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.specimen-note code {
+  color: var(--foreground);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 560px) {
+  .specimen-shell {
+    padding: 0.75rem;
+  }
+
+  .specimen-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
