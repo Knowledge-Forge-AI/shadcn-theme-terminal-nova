@@ -40,6 +40,70 @@ export const SUPPORT_FILES = [".github/workflows/verify.yml", ".gitignore", "tes
   "tools/build.mjs", "tools/qualify-package.mjs", "tools/toolchain.json", "tools/verify-lib.mjs", "tools/verify.mjs"];
 const APPEARANCE_PRODUCER_FILES = ["tools/appearance-catalog-lib.mjs", "tools/compose-appearances.mjs"];
 const APPEARANCE_SUPPORT_FILES = ["test/appearance-catalog.test.mjs", "test/appearance-package-integration.test.mjs", "test/appearance-single-profile.test.mjs"];
+/** Closed first-party site/workflow inventory. Every member is explicit; no site/** glob is admitted. */
+export const REPOSITORY_SITE_FILES = Object.freeze([
+  ".github/workflows/cttn-pages.yml",
+  "site/LICENSE",
+  "site/README.md",
+  "site/SOURCE-ASSETS.json",
+  "site/THIRD-PARTY-NOTICES.md",
+  "site/index.html",
+  "site/package-lock.json",
+  "site/package.json",
+  "site/public/404.html",
+  "site/public/appearances/anime/cttn.css",
+  "site/public/appearances/catalog.json",
+  "site/public/appearances/developer/cttn.css",
+  "site/public/appearances/gamer/cttn.css",
+  "site/public/appearances/graphic-designer/cttn.css",
+  "site/public/appearances/nebular/cttn.css",
+  "site/public/appearances/profiles/anime.profile.json",
+  "site/public/appearances/profiles/developer.profile.json",
+  "site/public/appearances/profiles/gamer.profile.json",
+  "site/public/appearances/profiles/graphic-designer.profile.json",
+  "site/public/appearances/profiles/nebular.profile.json",
+  "site/public/appearances/profiles/terminal-nova.profile.json",
+  "site/public/appearances/provenance.json",
+  "site/public/appearances/source-profiles.json",
+  "site/public/appearances/terminal-nova/cttn.css",
+  "site/public/brand/BRAND-ASSETS.md",
+  "site/public/brand/README-BRAND.md",
+  "site/public/brand/cttn-social.png",
+  "site/public/brand/cttn-social.svg",
+  "site/public/favicon.svg",
+  "site/public/robots.txt",
+  "site/specimen.html",
+  "site/src/App.tsx",
+  "site/src/catalog.ts",
+  "site/src/components/ui/button.tsx",
+  "site/src/components/ui/card.tsx",
+  "site/src/components/ui/dialog.tsx",
+  "site/src/components/ui/input.tsx",
+  "site/src/components/ui/label.tsx",
+  "site/src/components/ui/table.tsx",
+  "site/src/lib/utils.ts",
+  "site/src/main.tsx",
+  "site/src/specimen-entry.tsx",
+  "site/src/specimen-main.tsx",
+  "site/src/specimen.css",
+  "site/src/styles.css",
+  "site/src/test/consumer.test.tsx",
+  "site/src/vite-env.d.ts",
+  "site/tools/bundled-notices.d.mts",
+  "site/tools/bundled-notices.mjs",
+  "site/tools/license-evidence/react-remove-scroll-bar/LICENSE.txt",
+  "site/tools/license-evidence/react-remove-scroll-bar/evidence.json",
+  "site/tools/license-evidence/react-remove-scroll-bar/hash-receipt.json",
+  "site/tools/native-build-preflight-lib.cjs",
+  "site/tools/native-build-preflight.cjs",
+  "site/tools/test/bundled-notices.test.mjs",
+  "site/tools/test/native-build-preflight.node-test.cjs",
+  "site/tsconfig.json",
+  "site/vite.config.ts",
+]);
+if (REPOSITORY_SITE_FILES.length !== 58 || new Set(REPOSITORY_SITE_FILES).size !== REPOSITORY_SITE_FILES.length) {
+  throw new Error("Maintained repository site inventory must contain 58 unique paths");
+}
 const IGNORED_ROOTS = new Set([".git", "node_modules"]);
 const LEAK_PATTERNS = [/\/(Users|home|private\/var)\/[A-Za-z]/, /agent[-]scratch/, /triad[-]20\d\d/, /[.]serena\b/, /-----BEGIN [A-Z ]*PRIVATE KEY/,
   /\bnpm_[A-Za-z0-9]{36}\b/, /\bgh[pousr]_[A-Za-z0-9]{36}\b/];
@@ -416,6 +480,10 @@ export function verifyTree(files, mode) {
   if (mode === "repository") {
     verifyProducer(files, composition);
     for (const member of composition.producerInventory.files) allowed.add(member.path);
+    for (const path of REPOSITORY_SITE_FILES) {
+      if (files.has(path)) allowed.add(path);
+      else fail(`Missing repository site member: ${path}`);
+    }
     for (const path of SUPPORT_FILES) if (files.has(path)) allowed.add(path); else fail(`Missing repository support file: ${path}`);
     if (composition.producerInventory.files.some(member => APPEARANCE_PRODUCER_FILES.includes(member.path))) {
       for (const path of APPEARANCE_SUPPORT_FILES) if (files.has(path)) allowed.add(path); else fail(`Missing appearance support file: ${path}`);

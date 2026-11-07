@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
-import { readTree, scanForLeaks, sha256, verifyComposition, verifyTree } from "../tools/verify-lib.mjs";
+import { readTree, REPOSITORY_SITE_FILES, scanForLeaks, sha256, verifyComposition, verifyTree } from "../tools/verify-lib.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const pristine = readTree(root);
@@ -25,6 +25,21 @@ const reforge = files => {
 test("pristine repository and package trees verify", () => {
   assert.equal(verifyTree(copy(), "repository").status, "passed");
   assert.equal(verifyTree(packageTree(), "package").status, "passed");
+});
+
+test("the repository site inventory is exactly 58 closed members", () => {
+  assert.equal(REPOSITORY_SITE_FILES.length, 58);
+  assert.equal(new Set(REPOSITORY_SITE_FILES).size, 58);
+  assert.equal(REPOSITORY_SITE_FILES.filter(path => path.startsWith("site/")).length, 57);
+  assert.ok(REPOSITORY_SITE_FILES.includes(".github/workflows/cttn-pages.yml"));
+
+  const missing = copy();
+  missing.delete("site/README.md");
+  assert.throws(() => verifyTree(missing, "repository"), /Missing repository site member: site\/README\.md/);
+
+  const unknown = copy();
+  unknown.set("site/unclassified.txt", Buffer.from("unknown\n"));
+  assert.throws(() => verifyTree(unknown, "repository"), /Unclassified repository members: site\/unclassified\.txt/);
 });
 
 test("source member byte tamper", () => {
