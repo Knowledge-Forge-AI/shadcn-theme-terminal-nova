@@ -1,0 +1,87 @@
+{
+  "schema": "theme-forge.site-appearance-projection.v1",
+  "inventoryDigest": "d9f94a7f5ce0730098d840e409ca588caefc2e05c45fbec02d749d25f418fb51",
+  "sourceCatalogSha256": "0e635f5efc8d0df6867601530c26a919e992f9dc5170666b39fbbb0847a39351",
+  "members": [
+    {
+      "output": "catalog.json",
+      "producerMember": "catalog.json#site-index-v1",
+      "bytes": 794,
+      "sha256": "617979da9045eca6864e974b797a387a0bf324eeb12904360152639b3a68f6a5"
+    },
+    {
+      "output": "terminal-nova/cttn.css",
+      "producerMember": "terminal-nova/cttn.css",
+      "bytes": 3821,
+      "sha256": "acf0ccb3c315f6de0c2cf655260efa520431996f8c510f3ddb2941e0ac4d7fe9"
+    },
+    {
+      "output": "profiles/terminal-nova.profile.json",
+      "producerMember": "sourceIdentity.profiles:terminal-nova",
+      "bytes": 3123,
+      "sha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf"
+    },
+    {
+      "output": "nebular/cttn.css",
+      "producerMember": "nebular/cttn.css",
+      "bytes": 3821,
+      "sha256": "28962ace9e9ef9651fa1d35e2158552b02522852e75b75cdba71327628fb6dde"
+    },
+    {
+      "output": "profiles/nebular.profile.json",
+      "producerMember": "sourceIdentity.profiles:nebular",
+      "bytes": 3134,
+      "sha256": "fbe0dd3e46ca587f15e3ff221cf24b23e16321b7cca32c28bd1a7d31c20f9c88"
+    },
+    {
+      "output": "developer/cttn.css",
+      "producerMember": "developer/cttn.css",
+      "bytes": 3844,
+      "sha256": "fd91f8ef49be6386327638070bc2dc93fc8ad7464bdab052dcc4ddaa52006f79"
+    },
+    {
+      "output": "profiles/developer.profile.json",
+      "producerMember": "sourceIdentity.profiles:developer",
+      "bytes": 4734,
+      "sha256": "7b873b36bf4f0d141e70b72a11dbc6dac7f8250de0b2479b84fe014d629597a8"
+    },
+    {
+      "output": "graphic-designer/cttn.css",
+      "producerMember": "graphic-designer/cttn.css",
+      "bytes": 3840,
+      "sha256": "07aa8243219a78a89156cfc3ed711ad03574130506a317a81ba7cc7e0d375b45"
+    },
+    {
+      "output": "profiles/graphic-designer.profile.json",
+      "producerMember": "sourceIdentity.profiles:graphic-designer",
+      "bytes": 4742,
+      "sha256": "a8e06be7ebda519fcc2181d7daa8f4dbb86ca473cc3245ea710af27ba0c56232"
+    },
+    {
+      "output": "anime/cttn.css",
+      "producerMember": "anime/cttn.css",
+      "bytes": 3840,
+      "sha256": "e96efe07659bf29747011e93c04511e9b056900d6e1cf6e28c2a6ce36295817d"
+    },
+    {
+      "output": "profiles/anime.profile.json",
+      "producerMember": "sourceIdentity.profiles:anime",
+      "bytes": 4731,
+      "sha256": "af5a25686b15935226937209e2e4d020a3a5db229bd087dcc82637128ec6edda"
+    },
+    {
+      "output": "gamer/cttn.css",
+      "producerMember": "gamer/cttn.css",
+      "bytes": 3844,
+      "sha256": "4832861605414f343fe16c4e591cf0c0cf39beb52356211ba17a0bdd36de5e85"
+    },
+    {
+      "output": "profiles/gamer.profile.json",
+      "producerMember": "sourceIdentity.profiles:gamer",
+      "bytes": 4724,
+      "sha256": "f5880e7d49d6f8f3550c7ad2f338b0fc6036c7b70f053534da1947428cd4a303"
+    }
+  ],
+  "inputCatalogKind": "generated-appearance-catalog-candidate; raw source identity is bound inside that catalog",
+  "qualification": "Generated development candidates; no native, final visual or release acceptance"
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "cttn.license-source-hash.v1",
+  "sourceFile": "LICENSE.txt",
+  "byteLength": 1093,
+  "algorithm": "sha256",
+  "sha256": "a79aae0c0f21990d9d963bb3c5a79cdcea9a46f8523ba55c58d7fe776b6ebc84",
+  "derivation": "SHA-256 over the exact UTF-8 bytes of sourceFile"
+}

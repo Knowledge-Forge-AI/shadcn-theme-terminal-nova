@@ -1,0 +1,84 @@
+{
+  "schema": "cttn-site.source-assets.v1",
+  "conceptReference": {
+    "sha256": "5c56bbe35fb2a8dd24d41a1ae52619b7f026d8bccce8f1ffefe7c9f007e84db0",
+    "usage": "Generated layout and visual-direction reference; not a shipped asset"
+  },
+  "protectedArtwork": {
+    "novaIngot": "not used; the site uses a Terminal Nova text wordmark only"
+  },
+  "appearanceAssets": {
+    "catalog": "/appearances/catalog.json",
+    "familyPattern": "/appearances/{family}/cttn.css",
+    "families": [
+      "terminal-nova",
+      "nebular",
+      "developer",
+      "graphic-designer",
+      "anime",
+      "gamer"
+    ],
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "status": "Generated development candidates; final visual, native and release acceptance pending",
+    "inventoryDigest": "d9f94a7f5ce0730098d840e409ca588caefc2e05c45fbec02d749d25f418fb51",
+    "projectionReceipt": "/appearances/provenance.json"
+  },
+  "cttnPackage": {
+    "name": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
+    "version": "0.2.0",
+    "styleExport": "./styles/theme.css",
+    "import": "@knowledge-forge-ai/shadcn-theme-terminal-nova/styles/theme.css"
+  },
+  "upstreamShadcn": {
+    "revision": "d549251bab2e57dbf72f7c909d6458c02c43f529",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "button.tsx",
+        "upstreamSha256": "79dd6f75f8136394442202d6b8b922fb269eaad0a5dba579397c9d5b41f893bb",
+        "consumerSha256": "69b94d4aba890d9fae9ace629b20700dd4dd3d7afb6e666d20841f630df5cddd",
+        "sourceUrl": "https://github.com/shadcn-ui/ui/blob/d549251bab2e57dbf72f7c909d6458c02c43f529/apps/v4/registry/new-york-v4/ui/button.tsx"
+      },
+      {
+        "path": "card.tsx",
+        "upstreamSha256": "ef8305b12c3112dab42a4708b41b1ebcc042fa5ab4c20f039da8d45b09ed5059",
+        "consumerSha256": "675d8cdd636ebeb92200cc4e0aeaffa84952d0fa9095a0d41cd67f2bbbca43c5",
+        "sourceUrl": "https://github.com/shadcn-ui/ui/blob/d549251bab2e57dbf72f7c909d6458c02c43f529/apps/v4/registry/new-york-v4/ui/card.tsx"
+      },
+      {
+        "path": "dialog.tsx",
+        "upstreamSha256": "2ade6074e5fad0a4eb171ead44c43d3301a3c83d186d7236fb1fdbea80ee556b",
+        "consumerSha256": "a8cc498ddee50ca4bb21629151cc564f4719a05a8a5add684c58af326e110b0b",
+        "sourceUrl": "https://github.com/shadcn-ui/ui/blob/d549251bab2e57dbf72f7c909d6458c02c43f529/apps/v4/registry/new-york-v4/ui/dialog.tsx"
+      },
+      {
+        "path": "input.tsx",
+        "upstreamSha256": "0c9457181f6ddc80969bcf854e92c362903a55b6e889fbef3fd85343ecc4af5b",
+        "consumerSha256": "cddd2a11d7f939de117ab2b47070c0bf044683d0ea0c1e40d0c5082b90d8d85b",
+        "sourceUrl": "https://github.com/shadcn-ui/ui/blob/d549251bab2e57dbf72f7c909d6458c02c43f529/apps/v4/registry/new-york-v4/ui/input.tsx"
+      },
+      {
+        "path": "label.tsx",
+        "upstreamSha256": "344bde38b8531615dbf8e14af3895517c24d8ef6ce56ddeda7e2e6fe4b5d0c00",
+        "consumerSha256": "980f8ca87734cfeb99de271ba5e9d6c8650eca7759aa23995d9e58161893ad4c",
+        "sourceUrl": "https://github.com/shadcn-ui/ui/blob/d549251bab2e57dbf72f7c909d6458c02c43f529/apps/v4/registry/new-york-v4/ui/label.tsx"
+      },
+      {
+        "path": "table.tsx",
+        "upstreamSha256": "bd1a9fc83a5a2149e504038e274bb7e5a0351af59f6896df52ac4d5b439695ac",
+        "consumerSha256": "cd630617d4b85f3ffc83077bbe04b1bbdc13c3fb106eeb5da8a0caf9fae89eec",
+        "sourceUrl": "https://github.com/shadcn-ui/ui/blob/d549251bab2e57dbf72f7c909d6458c02c43f529/apps/v4/registry/new-york-v4/ui/table.tsx"
+      }
+    ],
+    "adaptations": [
+      "direct Radix primitive imports",
+      "local @/lib/utils re-export of cn",
+      "original inline functional close glyph",
+      "optional animation utilities omitted",
+      "destructive and overlay chrome consume theme roles"
+    ]
+  }
+}
