@@ -34,22 +34,25 @@ test("composition is deterministic and byte-identical to the committed members",
 
 test("composer identity is the actual standalone producer", () => {
   const composition = JSON.parse(text("composition.json"));
-  assert.deepEqual(composition.composer, { package: "@knowledge-forge-ai/shadcn-theme-terminal-nova", version: "0.1.0", role: "standalone-public-producer",
+  assert.deepEqual(composition.composer, { package: "@knowledge-forge-ai/shadcn-theme-terminal-nova", version: "0.2.0", role: "standalone-public-producer",
     tool: "tools/compose-lib.mjs", sourceSha256: sha256(tree.get("tools/compose-lib.mjs")), producerInventoryDigest: composition.producerInventory.digest });
   assert.deepEqual(composition.engines.map(e => e.sha256), ["65070c3478a1d55476c1b09fbe1dcadfdf7c3d3aa54a154bc9ac9e299411f415", "4e7a7d436c09ba111f5dca8101876c6e085ad15859d96bab8f728c5669880b5f"]);
 });
 
-test("a changed profile changes the bound source identity", () => {
+test("a changed profile cannot bypass the catalog-bound source identity", () => {
   const profile = text("tools/source/terminal-nova.profile.json").replace('"#69d3e4"', '"#69d3e5"');
-  const changed = composeCandidate(engines, profile);
-  assert.notEqual(JSON.parse(changed.files.get("composition.json")).sourceProfileSha256, JSON.parse(text("composition.json")).sourceProfileSha256);
-  assert.notEqual(changed.provenance.inventoryDigest, composed.provenance.inventoryDigest);
+  assert.throws(() => composeCandidate(engines, profile), /Terminal Nova profile source bytes drift from appearance source inventory/);
 });
 
 test("statuses, code presentation and declared STTN divergences are preserved", () => {
   assert.equal(text("src/status.ts"), text("tools/source/status.ts"));
   for (const key of ["healthy", "degraded", "error", "permission-denied", "loading", "empty"]) assert.match(text("src/status.ts"), new RegExp(`^  "?${key}"?: \\{ label`, "m"));
-  assert.match(text("src/index.ts"), /export \{ statuses, type ConsoleState \} from "\.\/status\.js";\n$/);
+  const index = text("src/index.ts");
+  assert.match(index, /export \{ statuses, type ConsoleState \} from "\.\/status\.js";/);
+  assert.match(index, /export \{ applicationBaselines \} from "\.\/appearance-baselines\.js";/);
+  assert.match(index, /export \{ appearanceCatalog \} from "\.\/appearance-catalog\.js";/);
+  assert.equal((index.match(/export \{ applicationBaselines \} from "\.\/appearance-baselines\.js";/g) ?? []).length, 1);
+  assert.equal((index.match(/export \{ appearanceCatalog \} from "\.\/appearance-catalog\.js";/g) ?? []).length, 1);
   const sttn = JSON.parse(readFileSync(sttnPath, "utf8"));
   assert.deepEqual(JSON.parse(text("loom-counterpart/terminal-nova.loom.theme.json")).codePresentation, sttn.codePresentation);
   const divergent = JSON.parse(text("reports/sttn-compatibility.json")).rows.filter(row => row.outcome !== "equal");

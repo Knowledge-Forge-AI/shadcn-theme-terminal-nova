@@ -1,6 +1,6 @@
 {
   "schema": "cttn.toolchain-v1",
-  "node": "22.23.3",
+  "node": "22.23.4",
   "npm": "10.9.9",
   "typescript": {
     "version": "7.0.2",

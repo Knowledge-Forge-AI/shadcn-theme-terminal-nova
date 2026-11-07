@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
         with:
-          node-version: 22.23.3
+          node-version: 22.23.4
           package-manager-cache: false
       - name: Check pinned Node and npm
         run: |

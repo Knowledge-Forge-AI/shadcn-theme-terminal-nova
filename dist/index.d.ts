@@ -56,3 +56,5 @@ export declare const themeSpec: ThemeSpecification;
 export declare const themeCss = "./styles/theme.css";
 export default themeSpec;
 export { statuses, type ConsoleState } from "./status.js";
+export { applicationBaselines } from "./appearance-baselines.js";
+export { appearanceCatalog } from "./appearance-catalog.js";

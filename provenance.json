@@ -2,16 +2,16 @@
   "schema": "cttn.package-provenance-v1",
   "producer": {
     "package": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "role": "standalone-public-producer",
     "tool": "tools/compose-lib.mjs",
-    "sourceSha256": "215f3f850e71137539ac86a031cd8ea7c3efb873a3c6136845b02ef8c723be50",
-    "producerInventoryDigest": "808846f4a1be1cba43bbc9ff52b6a8ce24ba4d428676c14b0987d9c57af5cd0e"
+    "sourceSha256": "b3b5b1edf64743a84e145b534fb94db01856a00342909f06efd48d1d077c745e",
+    "producerInventoryDigest": "f9c9a4868aa8ecc0340cc428546743657094df41caf9dd8db19727f4b4c7f47e"
   },
   "packageName": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
-  "packageVersion": "0.1.0",
+  "packageVersion": "0.2.0",
   "language": "typescript",
-  "inventoryDigest": "23997999be513f348a15f9efa01c4335d4575bbd78c1ae3e33d8ecbd95e6a0c6",
+  "inventoryDigest": "98a70a92e9d52d1304d63705932807ea0c2b6bb85f3cc381fa4cdcdd8a5e7bcd",
   "inventoryExcludes": [
     "provenance.json"
   ],
@@ -33,8 +33,8 @@
     },
     {
       "path": "composition.json",
-      "size": 7743,
-      "sha256": "2b4b7660ce1eeaf2f17050cbfcf7e8fad55d937c2c956cb2120002ef83bc7206"
+      "size": 46195,
+      "sha256": "44add2bbe281788e3d2f3bdaec3f453b280368fe426604f5d0daeeb760d536cc"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -59,12 +59,222 @@
     {
       "path": "package.json",
       "size": 1593,
-      "sha256": "2b76c1627c7e213be456a2c4be7ed398f2628e40a488d141a011791bf9a943df"
+      "sha256": "7e5a8657a910fcdfd9f50fa73d0df4e4f19409190cc257ce630c55cf97c62e4d"
     },
     {
       "path": "README.md",
       "size": 2952,
       "sha256": "4a27fffebc4baf64f712f44b82926d85b9932e72aa28d922cf6edc043e1d2541"
+    },
+    {
+      "path": "reports/appearances/appearance-extensions/anime.css",
+      "size": 361,
+      "sha256": "5f86d5ca7ea76c4c14c3e608ccf37424334f19684c5ee04c507551bb7cc01ada"
+    },
+    {
+      "path": "reports/appearances/appearance-extensions/developer.css",
+      "size": 360,
+      "sha256": "154928721cf2ad497473fd0243e4c93a361ed3434b348afd56df32d2868e02ec"
+    },
+    {
+      "path": "reports/appearances/appearance-extensions/gamer.css",
+      "size": 360,
+      "sha256": "25e295fb65131b203155a64275055ba4d59d466042c7a5b6b6d03b9c34ca0c18"
+    },
+    {
+      "path": "reports/appearances/appearance-extensions/graphic-designer.css",
+      "size": 360,
+      "sha256": "5f89ef21e287f005379fc7690a193b05a7cf48d9354f2a2c82326062e3b286de"
+    },
+    {
+      "path": "reports/appearances/appearance-extensions/nebular.css",
+      "size": 361,
+      "sha256": "8a7e900b83d9b77f0d145adf1dc2fc287b7a80de5681922a5e12832f908c640b"
+    },
+    {
+      "path": "reports/appearances/appearance-extensions/terminal-nova.css",
+      "size": 360,
+      "sha256": "f617f809adc5db9a7c739b5a9218b57467934fe160be92214f49ef6feb97dc55"
+    },
+    {
+      "path": "reports/appearances/catalog.json",
+      "size": 286807,
+      "sha256": "0e635f5efc8d0df6867601530c26a919e992f9dc5170666b39fbbb0847a39351"
+    },
+    {
+      "path": "reports/appearances/inventory.json",
+      "size": 15081,
+      "sha256": "d20eddba49b146a45c3c38e1bf0554d1145853da1b9cbd970aff7e693a862438"
+    },
+    {
+      "path": "reports/appearances/mappings/anime/application-extension.mapping.json",
+      "size": 984,
+      "sha256": "98193943251c3e6fc4e99ff0838ca4eb4e4d00c11c4a4aabcf0eb82ba0c9d9eb"
+    },
+    {
+      "path": "reports/appearances/mappings/anime/loom.mapping.json",
+      "size": 50889,
+      "sha256": "84e7ef1d4b005ab4cfd1ddaac7b6f039924a497f9e7c7808e953384ced3e6c21"
+    },
+    {
+      "path": "reports/appearances/mappings/anime/solar.mapping.json",
+      "size": 31263,
+      "sha256": "60971ba62f61b501a53d253cdbc4bb5802301c04486d041b96f1bce5acd44fe8"
+    },
+    {
+      "path": "reports/appearances/mappings/developer/application-extension.mapping.json",
+      "size": 983,
+      "sha256": "c455475eb33d77f4236b4da33077d0e63b8fdad547dce4316ea193321f90aacc"
+    },
+    {
+      "path": "reports/appearances/mappings/developer/loom.mapping.json",
+      "size": 46521,
+      "sha256": "7ac1711a9b88f4e90bc0f7b433a98060d3bc84affe4ba4583bed8fdc891fb915"
+    },
+    {
+      "path": "reports/appearances/mappings/developer/solar.mapping.json",
+      "size": 31275,
+      "sha256": "6621225e9625f7e31b4c50e1cb6e721fc3ffab26fab48002b8af26ddd5ba2d69"
+    },
+    {
+      "path": "reports/appearances/mappings/gamer/application-extension.mapping.json",
+      "size": 983,
+      "sha256": "3d469305eb3c7221f018ce2985d106c6f77bd0ea0ffd05fc638b171bc313823e"
+    },
+    {
+      "path": "reports/appearances/mappings/gamer/loom.mapping.json",
+      "size": 46558,
+      "sha256": "2e6aa3512df64896a7ec2af8fddb3b624d9888e75f95dd4f9a37945be1f2cb1c"
+    },
+    {
+      "path": "reports/appearances/mappings/gamer/solar.mapping.json",
+      "size": 31272,
+      "sha256": "5c570112a0b215851aa90c254061b126d4db1530c3f52856ce6c5fa37178f983"
+    },
+    {
+      "path": "reports/appearances/mappings/graphic-designer/application-extension.mapping.json",
+      "size": 983,
+      "sha256": "1c3007e95c4314d52cdd7a277940c95660f436c190ae52fae6e57d4585ccf04b"
+    },
+    {
+      "path": "reports/appearances/mappings/graphic-designer/loom.mapping.json",
+      "size": 46439,
+      "sha256": "a110e90888e01b64b92485679b378e39a7c9115ead0f0c7219c3ca025060b76c"
+    },
+    {
+      "path": "reports/appearances/mappings/graphic-designer/solar.mapping.json",
+      "size": 31260,
+      "sha256": "caac449f8916b2340fffd520ba8b71937933f2025d1ea21cc3667ef3072f4c97"
+    },
+    {
+      "path": "reports/appearances/mappings/nebular/application-extension.mapping.json",
+      "size": 984,
+      "sha256": "806d83229e81cb27ff8e0ac64baf8f7ac9f0f2024fbb8e52c9fec16279c36545"
+    },
+    {
+      "path": "reports/appearances/mappings/nebular/loom.mapping.json",
+      "size": 42951,
+      "sha256": "c2c45d6dc4f676147f0f191b2f115293cb1721a7ba91bbc87c105ebbf6530182"
+    },
+    {
+      "path": "reports/appearances/mappings/nebular/solar.mapping.json",
+      "size": 21932,
+      "sha256": "be1d3d3f51f0408c848e89b5254428cc88c8c0e7386ce148ca0faa14c6191aa3"
+    },
+    {
+      "path": "reports/appearances/mappings/terminal-nova/application-extension.mapping.json",
+      "size": 983,
+      "sha256": "51908fd440fa3fb469d5c413b68c2baae1f658b95d7bfad1014b5614c1202124"
+    },
+    {
+      "path": "reports/appearances/mappings/terminal-nova/loom.mapping.json",
+      "size": 34604,
+      "sha256": "9e90b21d11c33af6f275884675e0ec5e10e31d2a217c84a236febd1c183097b2"
+    },
+    {
+      "path": "reports/appearances/mappings/terminal-nova/solar.mapping.json",
+      "size": 21943,
+      "sha256": "ae7d89e5935982d7b8bfce6511390cbb99e675c6a9d3244062456f7d9a5ccd13"
+    },
+    {
+      "path": "reports/appearances/source/catalog.json",
+      "size": 1595,
+      "sha256": "5d06b5803a0c68e2dc1c979a5ace407eb417c5358372c2f96319a112945a1a01"
+    },
+    {
+      "path": "reports/appearances/source/engines.json",
+      "size": 1040,
+      "sha256": "9334e4df9d0d2bdca871a3a537ff15a5108de81b79a14839aa7b61250170830d"
+    },
+    {
+      "path": "reports/appearances/source/inventory.json",
+      "size": 1789,
+      "sha256": "b6593516d66b345efe2f6b2b0aa810be7ab785ab8bc0671536b79e807800fd4e"
+    },
+    {
+      "path": "reports/appearances/source/profiles/anime.profile.json",
+      "size": 4731,
+      "sha256": "af5a25686b15935226937209e2e4d020a3a5db229bd087dcc82637128ec6edda"
+    },
+    {
+      "path": "reports/appearances/source/profiles/developer.profile.json",
+      "size": 4734,
+      "sha256": "7b873b36bf4f0d141e70b72a11dbc6dac7f8250de0b2479b84fe014d629597a8"
+    },
+    {
+      "path": "reports/appearances/source/profiles/gamer.profile.json",
+      "size": 4724,
+      "sha256": "f5880e7d49d6f8f3550c7ad2f338b0fc6036c7b70f053534da1947428cd4a303"
+    },
+    {
+      "path": "reports/appearances/source/profiles/graphic-designer.profile.json",
+      "size": 4742,
+      "sha256": "a8e06be7ebda519fcc2181d7daa8f4dbb86ca473cc3245ea710af27ba0c56232"
+    },
+    {
+      "path": "reports/appearances/source/profiles/nebular.profile.json",
+      "size": 3134,
+      "sha256": "fbe0dd3e46ca587f15e3ff221cf24b23e16321b7cca32c28bd1a7d31c20f9c88"
+    },
+    {
+      "path": "reports/appearances/source/profiles/terminal-nova.profile.json",
+      "size": 3123,
+      "sha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf"
+    },
+    {
+      "path": "reports/appearances/source/sttn/v0.4/terminal-nova.theme.json",
+      "size": 11161,
+      "sha256": "436e278cdbe3a37e06048504df3897d65230318f17b7ebd754060c2866703324"
+    },
+    {
+      "path": "reports/appearances/sttn-catalogs/anime.json",
+      "size": 16810,
+      "sha256": "7324ca5b1bafe641af9f49a1f64fc563d06fbf44e5c71c6f4a8a2ed33b0adc83"
+    },
+    {
+      "path": "reports/appearances/sttn-catalogs/developer.json",
+      "size": 12736,
+      "sha256": "a2371dc0ece80bb70d8f8a0f0c695e5a2b721ebd30243554744cc9b4e97bf002"
+    },
+    {
+      "path": "reports/appearances/sttn-catalogs/gamer.json",
+      "size": 12768,
+      "sha256": "c9a9098fef98b02af294b2fa0fb6987e52b9a7a38bbda368e4d87e4e159c3c93"
+    },
+    {
+      "path": "reports/appearances/sttn-catalogs/graphic-designer.json",
+      "size": 12742,
+      "sha256": "0f2c408f8349496cda27b7cfbf21f481085aa31b8e9c333401f323b5c7ba2298"
+    },
+    {
+      "path": "reports/appearances/sttn-catalogs/nebular.json",
+      "size": 20371,
+      "sha256": "9c713eb02549b4ae58921bd316405a8bf9f1c28e169a1a185ed2d075e7c05f1a"
+    },
+    {
+      "path": "reports/appearances/sttn-catalogs/terminal-nova.json",
+      "size": 12739,
+      "sha256": "1c0a90c7aba31ff3daf794ec1ecc8bb64edf081e7fcafb8c62d4c218c586e294"
     },
     {
       "path": "reports/solar-sail.mapping.json",
@@ -74,7 +284,7 @@
     {
       "path": "reports/solar-sail.provenance.json",
       "size": 1894,
-      "sha256": "5647d59ad76af5cd183b8f806ed17b734072e200a4ce9df2c8664d76ccd7ab3a"
+      "sha256": "88d23cbe5198061f0c44cd32fb1f718180b1d51f70d0356b6261404b8a7f7699"
     },
     {
       "path": "reports/stellar-loom.mapping.json",
@@ -83,18 +293,118 @@
     },
     {
       "path": "reports/sttn-compatibility.json",
-      "size": 19285,
-      "sha256": "21554dda3f27730b4d7fae4f9ff1b4c93254ac9a62cdb3e6b8e9ce652c3db38e"
+      "size": 19623,
+      "sha256": "da9bfe1adc0f64d89bceea5f7c8b5c405f81e89bc123ff3a153f82f6a2ad2778"
+    },
+    {
+      "path": "src/appearance-baselines.ts",
+      "size": 26498,
+      "sha256": "11714787ea2cdf79a3ad25a2bd71affe5ab51948071e2edf99d9d50575ccf12f"
+    },
+    {
+      "path": "src/appearance-catalog.ts",
+      "size": 287015,
+      "sha256": "aeb840de8407c1e10cedaffe2de38ec195341c3cd8e4566d8f8f34db9ccfc479"
     },
     {
       "path": "src/index.ts",
-      "size": 3870,
-      "sha256": "cb03d5028b554ff77e9b90a51a26cd7fa7c41d21470bf390a9034c53cfd834e1"
+      "size": 3998,
+      "sha256": "19cf4d0c93743f5e71e80dd33131dfd3c90f112cc8c497746eeabd0c8bce5be9"
     },
     {
       "path": "src/status.ts",
       "size": 723,
       "sha256": "99deeb6d4d9ceb2dfdbb018603ba720a01249c61136aeea0a6136fa8dce0aca3"
+    },
+    {
+      "path": "styles/appearances-application/anime.css",
+      "size": 4247,
+      "sha256": "3e6bcb1635261da524f66eace082d7878c548db832f8e7816ac2c26fd55a6cbb"
+    },
+    {
+      "path": "styles/appearances-application/developer.css",
+      "size": 4250,
+      "sha256": "6952118016681724443152d5a27c3bbe231e1ad804c33076432dd62b7379f88d"
+    },
+    {
+      "path": "styles/appearances-application/gamer.css",
+      "size": 4250,
+      "sha256": "c89d11e1c225127c4288a7a6b3f2a5f096d3cb8ee96225e47fea7897643919d6"
+    },
+    {
+      "path": "styles/appearances-application/graphic-designer.css",
+      "size": 4246,
+      "sha256": "5bd1f7de357259b389bfcdeab25044b5b8044ef4ad9a54388a762b4227001d12"
+    },
+    {
+      "path": "styles/appearances-application/nebular.css",
+      "size": 4228,
+      "sha256": "616ffa3e0001cf146d552fcb5cca18b177febabf9ca406151578db53fd3d84cb"
+    },
+    {
+      "path": "styles/appearances-application/terminal-nova.css",
+      "size": 4227,
+      "sha256": "e4f8327022953c78996bf799385feae0ad7caff850eeaf9b198a7a6c5eb5ff7f"
+    },
+    {
+      "path": "styles/appearances-sttn/anime.css",
+      "size": 10915,
+      "sha256": "99b3d65d28a2a7612f253971ab30c8f746c6aff3d2695db82e52156082dd9c93"
+    },
+    {
+      "path": "styles/appearances-sttn/developer.css",
+      "size": 10917,
+      "sha256": "2c12f2220958e9233570c51ebb5b13e8c0caa4523aa1cd88a34cc6c2ba589fcf"
+    },
+    {
+      "path": "styles/appearances-sttn/gamer.css",
+      "size": 10915,
+      "sha256": "6cd6fbcda1124d47383b8f99fec7b5cba1564677333fcd833d18d0b313eb6b8e"
+    },
+    {
+      "path": "styles/appearances-sttn/graphic-designer.css",
+      "size": 10916,
+      "sha256": "dede2e61fe3ae76bf93f09a93daaba03c5fe95cf7f260ea68290efc8f3595f4c"
+    },
+    {
+      "path": "styles/appearances-sttn/nebular.css",
+      "size": 10907,
+      "sha256": "b6e74c12cd4eed6dd6e7cba28bead4892dee6fafc24af96ab57349ea51ec26cc"
+    },
+    {
+      "path": "styles/appearances-sttn/terminal-nova.css",
+      "size": 10922,
+      "sha256": "328439213f29cf6e05ac7df7323d2dda5336bce9228825b26a16b34a1beadcb7"
+    },
+    {
+      "path": "styles/appearances/anime.css",
+      "size": 3840,
+      "sha256": "e96efe07659bf29747011e93c04511e9b056900d6e1cf6e28c2a6ce36295817d"
+    },
+    {
+      "path": "styles/appearances/developer.css",
+      "size": 3844,
+      "sha256": "fd91f8ef49be6386327638070bc2dc93fc8ad7464bdab052dcc4ddaa52006f79"
+    },
+    {
+      "path": "styles/appearances/gamer.css",
+      "size": 3844,
+      "sha256": "4832861605414f343fe16c4e591cf0c0cf39beb52356211ba17a0bdd36de5e85"
+    },
+    {
+      "path": "styles/appearances/graphic-designer.css",
+      "size": 3840,
+      "sha256": "07aa8243219a78a89156cfc3ed711ad03574130506a317a81ba7cc7e0d375b45"
+    },
+    {
+      "path": "styles/appearances/nebular.css",
+      "size": 3821,
+      "sha256": "28962ace9e9ef9651fa1d35e2158552b02522852e75b75cdba71327628fb6dde"
+    },
+    {
+      "path": "styles/appearances/terminal-nova.css",
+      "size": 3821,
+      "sha256": "acf0ccb3c315f6de0c2cf655260efa520431996f8c510f3ddb2941e0ac4d7fe9"
     },
     {
       "path": "styles/theme.css",

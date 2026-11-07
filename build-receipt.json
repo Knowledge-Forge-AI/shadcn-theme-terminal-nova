@@ -1,9 +1,9 @@
 {
   "schema": "cttn.build-receipt-v1",
   "packageName": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
-  "packageVersion": "0.1.0",
-  "sourceInventoryDigest": "23997999be513f348a15f9efa01c4335d4575bbd78c1ae3e33d8ecbd95e6a0c6",
-  "provenanceSha256": "d77555e501ffe0b54c36689e0cca70d03a7573b00f5aece195925bdd6f1f6ba4",
+  "packageVersion": "0.2.0",
+  "sourceInventoryDigest": "98a70a92e9d52d1304d63705932807ea0c2b6bb85f3cc381fa4cdcdd8a5e7bcd",
+  "provenanceSha256": "05a4b0b793f1735a8b4d29d8fa00955ca0f316a9ce43c46c855fb6038aef0c8e",
   "compiler": {
     "package": "typescript",
     "version": "7.0.2",
@@ -12,14 +12,34 @@
   },
   "files": [
     {
+      "path": "dist/appearance-baselines.d.ts",
+      "size": 26491,
+      "sha256": "2fcf27006dde2345f48bf3e1e55f64ea1840bf4e842545c0bfc26cb89af2843e"
+    },
+    {
+      "path": "dist/appearance-baselines.js",
+      "size": 26510,
+      "sha256": "ae53c99d8d65e56d4d3937c7253363827bd59a763ee269e134eabaae28100fb5"
+    },
+    {
+      "path": "dist/appearance-catalog.d.ts",
+      "size": 322777,
+      "sha256": "bf2c74893d59869d2e24116a05aedfa24114ceca14597bb35b5243c714168219"
+    },
+    {
+      "path": "dist/appearance-catalog.js",
+      "size": 371274,
+      "sha256": "4798ebf208a47930251e937549153fac65b9817748a785a094fb301d11dea753"
+    },
+    {
       "path": "dist/index.d.ts",
-      "size": 1477,
-      "sha256": "ecbb27cd7762fe054765d190e6d48c4f7963b14bcf024eb69fba29215cae263f"
+      "size": 1604,
+      "sha256": "4822195fd1da91053b3a1279d705dbbf90fd92b28bd54149e71e45dade8a7178"
     },
     {
       "path": "dist/index.js",
-      "size": 3093,
-      "sha256": "f6ee17fc546e73f1b25790e7f4b776615831f36d7491ae9c9d543bfed1badb10"
+      "size": 3220,
+      "sha256": "7a5026e4b6db4f90c42312edd89057fad2b2380635f1c4dfa376381bba360f76"
     },
     {
       "path": "dist/status.d.ts",
@@ -32,5 +52,5 @@
       "sha256": "bd9dc9c301ebcb21938b853ae52a952dd19b744ffb3482ed70e1ab1d00d85821"
     }
   ],
-  "inventoryDigest": "2f8835622d5c664ac5065b46db0530d1c942621a196ade586bf9b999536d63b8"
+  "inventoryDigest": "d19081dcec6675e8127da6afe2c93b11bb023b51d96b47e195087945f81b2d47"
 }
