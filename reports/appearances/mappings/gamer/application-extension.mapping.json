@@ -1,0 +1,36 @@
+{
+  "schema": "theme-forge.application-appearance-extension.v1",
+  "entries": [
+    {
+      "sourcePath": "typography.ui.family",
+      "target": "--tf-appearance-font-ui",
+      "value": "monospace"
+    },
+    {
+      "sourcePath": "radius.surface",
+      "target": "--tf-appearance-radius-surface",
+      "value": "8px"
+    },
+    {
+      "sourcePath": "color.light.selection",
+      "target": "--tf-appearance-selection",
+      "value": "#d3e6fa"
+    },
+    {
+      "sourcePath": "color.light.selectionText",
+      "target": "--tf-appearance-selection-text",
+      "value": "#0b3b66"
+    },
+    {
+      "sourcePath": "color.dark.selection",
+      "target": "--tf-appearance-selection",
+      "value": "#1f4f6d"
+    },
+    {
+      "sourcePath": "color.dark.selectionText",
+      "target": "--tf-appearance-selection-text",
+      "value": "#e1f5ff"
+    }
+  ],
+  "scope": "Explicit application-only roles supplementary to the authentic Solar mapping; not claimed as Solar support"
+}

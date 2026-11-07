@@ -10,6 +10,11 @@
     "Loom syntax/chrome model is reported but STTN codePresentation is retained",
     "CTTN primary cyan; Loom default accent orange"
   ],
+  "legacyRootVsAppearanceTarget": {
+    "legacyRoot": "styles/theme.css",
+    "newTarget": "styles/appearances/terminal-nova.css",
+    "relation": "The historical Solar root remains a legacy package target; the catalog-derived Terminal Nova appearance projection is a separate target and is not asserted byte-identical to that root"
+  },
   "rows": [
     {
       "family": "cyan",

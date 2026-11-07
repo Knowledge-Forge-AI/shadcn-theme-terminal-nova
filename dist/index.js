@@ -86,3 +86,5 @@ export const themeSpec = {
 export const themeCss = "./styles/theme.css";
 export default themeSpec;
 export { statuses } from "./status.js";
+export { applicationBaselines } from "./appearance-baselines.js";
+export { appearanceCatalog } from "./appearance-catalog.js";

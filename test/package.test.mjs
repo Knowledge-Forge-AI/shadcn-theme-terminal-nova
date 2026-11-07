@@ -16,7 +16,7 @@ const npm = argv => process.env.CTTN_NPM_CLI ? execFileSync(process.execPath, [p
 
 test("public package metadata", () => {
   assert.equal(pkg.name, "@knowledge-forge-ai/shadcn-theme-terminal-nova");
-  assert.equal(pkg.version, "0.1.0");
+  assert.equal(pkg.version, "0.2.0");
   assert.equal(pkg.private, false);
   assert.deepEqual(pkg.publishConfig, { access: "public", registry: "https://registry.npmjs.org/" });
   assert.deepEqual(pkg.repository, { type: "git", url: "git+https://github.com/Knowledge-Forge-AI/shadcn-theme-terminal-nova.git" });

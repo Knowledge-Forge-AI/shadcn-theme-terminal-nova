@@ -1,0 +1,53 @@
+{
+  "schema": "theme-forge.appearance-catalog-source.v1",
+  "status": "source-and-consumer-preparation; no release or visual acceptance",
+  "defaultFamily": "nebular",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "applicationBaselineLayer": "theme-forge-application-baseline",
+  "sttnTemplate": "../sttn/v0.4/terminal-nova.theme.json",
+  "familyBindings": {
+    "system-ui": "system-sans",
+    "monospace": "system-mono"
+  },
+  "profiles": [
+    {
+      "id": "terminal-nova",
+      "label": "Terminal Nova",
+      "review": "Published shared source; new consumer integration pending",
+      "source": "../terminal-nova.profile.json"
+    },
+    {
+      "id": "nebular",
+      "label": "Nebular",
+      "review": "Purple/gold visual candidate; owner visual review pending",
+      "source": "nebular.profile.json"
+    },
+    {
+      "id": "developer",
+      "label": "Developer",
+      "review": "Restrained cool workbench visual candidate; owner visual review pending",
+      "source": "developer.profile.json"
+    },
+    {
+      "id": "graphic-designer",
+      "label": "Graphic Designer",
+      "review": "Neutral document-inspection visual candidate; owner visual review pending",
+      "source": "graphic-designer.profile.json"
+    },
+    {
+      "id": "anime",
+      "label": "Anime",
+      "review": "Lavender/rose visual candidate; owner visual review pending",
+      "source": "anime.profile.json"
+    },
+    {
+      "id": "gamer",
+      "label": "Gamer",
+      "review": "Energetic geometry visual candidate; owner visual review pending",
+      "source": "gamer.profile.json"
+    }
+  ]
+}

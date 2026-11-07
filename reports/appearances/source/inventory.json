@@ -1,0 +1,51 @@
+{
+  "schema": "theme-forge.appearance-source-inventory.v1",
+  "members": [
+    {
+      "path": "tools/source/appearance-catalog/anime.profile.json",
+      "size": 4731,
+      "sha256": "af5a25686b15935226937209e2e4d020a3a5db229bd087dcc82637128ec6edda"
+    },
+    {
+      "path": "tools/source/appearance-catalog/catalog.json",
+      "size": 1595,
+      "sha256": "5d06b5803a0c68e2dc1c979a5ace407eb417c5358372c2f96319a112945a1a01"
+    },
+    {
+      "path": "tools/source/appearance-catalog/developer.profile.json",
+      "size": 4734,
+      "sha256": "7b873b36bf4f0d141e70b72a11dbc6dac7f8250de0b2479b84fe014d629597a8"
+    },
+    {
+      "path": "tools/source/appearance-catalog/gamer.profile.json",
+      "size": 4724,
+      "sha256": "f5880e7d49d6f8f3550c7ad2f338b0fc6036c7b70f053534da1947428cd4a303"
+    },
+    {
+      "path": "tools/source/appearance-catalog/graphic-designer.profile.json",
+      "size": 4742,
+      "sha256": "a8e06be7ebda519fcc2181d7daa8f4dbb86ca473cc3245ea710af27ba0c56232"
+    },
+    {
+      "path": "tools/source/appearance-catalog/nebular.profile.json",
+      "size": 3134,
+      "sha256": "fbe0dd3e46ca587f15e3ff221cf24b23e16321b7cca32c28bd1a7d31c20f9c88"
+    },
+    {
+      "path": "tools/source/engines.json",
+      "size": 1040,
+      "sha256": "9334e4df9d0d2bdca871a3a537ff15a5108de81b79a14839aa7b61250170830d"
+    },
+    {
+      "path": "tools/source/sttn/v0.4/terminal-nova.theme.json",
+      "size": 11161,
+      "sha256": "436e278cdbe3a37e06048504df3897d65230318f17b7ebd754060c2866703324"
+    },
+    {
+      "path": "tools/source/terminal-nova.profile.json",
+      "size": 3123,
+      "sha256": "fe3c5e92ef17171bb018356e72d31e825291d81bb225a167885adea5dcf330bf"
+    }
+  ],
+  "digest": "2fe8c19a31de88c01ebb50e331c53132aecbe704849be80497e5408cdff9f69f"
+}

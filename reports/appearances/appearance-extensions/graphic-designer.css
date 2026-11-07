@@ -1,0 +1,4 @@
+:root { color-scheme: light; --tf-appearance-font-ui: system-ui; --tf-appearance-radius-surface: 6px; }
+.dark, :root[data-theme='dark'] { color-scheme: dark; }
+:root { --tf-appearance-selection: #d8e8f2; --tf-appearance-selection-text: #24394a; }
+.dark, :root[data-theme='dark'] { --tf-appearance-selection: #2e4c60; --tf-appearance-selection-text: #e2f3ff; }

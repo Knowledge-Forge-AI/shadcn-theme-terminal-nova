@@ -5,9 +5,9 @@
     "version": "0.3.0"
   },
   "packageName": "@knowledge-forge-ai/shadcn-theme-terminal-nova",
-  "packageVersion": "0.1.0",
+  "packageVersion": "0.2.0",
   "language": "typescript",
-  "inventoryDigest": "04a1684a771eea65fd29d4b53892a8284f10fe798c39dbc982d44f359cc31584",
+  "inventoryDigest": "b40924ec742deff017b879981b7e7c563b95370f6aa9dbe358f63304b2759fbb",
   "inventoryExcludes": [
     "provenance.json"
   ],
@@ -30,7 +30,7 @@
     {
       "path": "package.json",
       "size": 883,
-      "sha256": "acf6e3943562298ac940010e4c145679a99264b05c329df7e557594db4ce94f2"
+      "sha256": "aa63bc849548a33518c0d87a35dbb890f68ca845407008d194e1d16aea84d1ac"
     },
     {
       "path": "README.md",
