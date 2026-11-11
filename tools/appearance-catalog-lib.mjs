@@ -248,6 +248,43 @@ function applyLoomOverrides(template, profile) {
   return catalog;
 }
 
+function applyStarlightLightSurfaces(catalog, profile) {
+  const roles = {
+    page: "canvas", body: "canvasText", navigation: "surface", header: "surface",
+    sidebar: "mutedSurface", panel: "surface", raised: "elevatedSurface", card: "surface",
+    secondary: "canvasText", border: "fieldBorder", hairline: "fieldBorder",
+    muted: "mutedText", "inline-code": "mutedSurface",
+  };
+  const entries = [];
+  const planned = new Map();
+  for (const [variant, record] of Object.entries(catalog.accentVariants)) {
+    const tokens = catalog.tokenSets[record.tokenSet];
+    for (const [role, sourceRole] of Object.entries(roles)) {
+      const value = profile.color?.light?.[sourceRole];
+      assert(typeof value === "string" && /^#[0-9a-f]{6}$/i.test(value), "Starlight light adaptation requires opaque profile colors");
+      assert(Object.hasOwn(record.light, role), "Starlight light adaptation role is absent");
+      // The bounded template already has distinct light tokens. Refuse a
+      // future alias into dark or unrelated roles instead of changing it.
+      const token = record.light[role];
+      assert(Object.hasOwn(tokens, token), "Starlight light adaptation token is absent");
+      for (const other of Object.values(catalog.accentVariants)) {
+        if (other.tokenSet !== record.tokenSet) continue;
+        assert(!Object.values(other.dark).includes(token), "Starlight light adaptation token aliases dark mode");
+        for (const [otherRole, otherToken] of Object.entries(other.light)) {
+          assert(otherToken !== token || Object.hasOwn(roles, otherRole), "Starlight light adaptation token aliases an unrelated role");
+        }
+      }
+      const key = `${record.tokenSet}/${token}`;
+      assert(!planned.has(key) || planned.get(key).value === value, "Starlight light adaptation token collision");
+      planned.set(key, { tokens, token, value });
+      entries.push({ variant, mode: "light", role, tokenSet: record.tokenSet, token,
+        sourcePath: `color.light.${sourceRole}`, enginePriorValue: tokens[token], value });
+    }
+  }
+  for (const { tokens, token, value } of planned.values()) tokens[token] = value;
+  return { owner: "shared-catalog-producer", scope: "Explicit light surface adaptation; not claimed as additional Solar engine support", entries };
+}
+
 export function compileBoundAppearanceProfile(engineBundle, bound, options) {
   assert(engineBundle && engineBundle.solar && engineBundle.loom, "Appearance profile engines are required");
   assert(bound && typeof bound === "object" && bound.profile && typeof bound.profile === "object", "A bound appearance profile is required");
@@ -269,7 +306,12 @@ export function compileBoundAppearanceProfile(engineBundle, bound, options) {
   const loomCatalog = applyLoomOverrides(template, profile);
   loomCatalog.name = profile.name;
   loomCatalog.version = profile.version;
-  const loomMapping = bound.mapToStellarLoom({ catalog: loomCatalog, familyBindings: options.familyBindings });
+  const mapped = bound.mapToStellarLoom({ catalog: loomCatalog, familyBindings: options.familyBindings });
+  const loomMapping = { ...mapped, catalog: structuredClone(mapped.catalog) };
+  const lightSurfaceAdaptation = applyStarlightLightSurfaces(loomMapping.catalog, profile);
+  lightSurfaceAdaptation.stage = "after-engine-mapping-before-compilation";
+  lightSurfaceAdaptation.engineCatalogSha256 = sha256(json(mapped.catalog));
+  lightSurfaceAdaptation.adaptedCatalogSha256 = sha256(json(loomMapping.catalog));
   assert(JSON.stringify(loomMapping.catalog.codePresentation) === JSON.stringify(template.codePresentation), `STTN code presentation drift: ${profile.name}`);
   loom.validateThemeCatalog(loomMapping.catalog);
   const loomResult = loom.compileTheme(loomMapping.catalog, { sourceProfileSha256: bound.provenance.rawSourceSha256 });
@@ -291,6 +333,7 @@ export function compileBoundAppearanceProfile(engineBundle, bound, options) {
     solarApplication,
     applicationCss,
     roleDisposition,
+    lightSurfaceAdaptation,
   };
 }
 
@@ -343,7 +386,7 @@ export function compileAppearanceCollection(engineBundle, inputs) {
         applicationBaselineLayer: inputs.catalog.applicationBaselineLayer,
       },
     );
-    const { profile, extension, solarMapping, solarResult, loomMapping, loomResult, applicationCss, roleDisposition } = compiled;
+    const { profile, extension, solarMapping, solarResult, loomMapping, loomResult, applicationCss, roleDisposition, lightSurfaceAdaptation } = compiled;
 
     emit(`${declaration.id}/cttn.css`, solarResult.css);
     emit(`${declaration.id}/appearance-extensions.css`, extension.css);
@@ -371,6 +414,7 @@ export function compileAppearanceCollection(engineBundle, inputs) {
         loom: loomMapping.report.entries.filter(entry => ["unsupported", "target-specific"].includes(entry.classification)),
         profileDerivedRoles: roleDisposition.profileDerivedRoles,
         templateRetainedRoles: roleDisposition.templateRetainedRoles,
+        lightSurfaceAdaptation,
         roleComparison: {
           method: "resolved-value-comparison-to-declared-template",
           derivedMeaning: "Inferred profile-derived roles are resolved values differing from the admitted source variant; equal values are template-retained",

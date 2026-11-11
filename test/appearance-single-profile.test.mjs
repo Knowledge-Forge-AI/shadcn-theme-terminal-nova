@@ -29,7 +29,7 @@ const appearanceInputs = {
   templateSource,
   profiles: profileInputs,
 };
-const acceptedCollectionDigest = "d9f94a7f5ce0730098d840e409ca588caefc2e05c45fbec02d749d25f418fb51";
+const acceptedCollectionDigest = "d172e64015c2f3af32b8824924f2e3472925ce3fa6950442dd9e580a71490b19";
 const json = value => JSON.stringify(value, null, 2) + "\n";
 let engines;
 let collection;

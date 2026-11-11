@@ -2,8 +2,9 @@ import assert from "node:assert/strict";
 import { readFileSync, rmSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { after, before, test } from "node:test";
-import { compileAppearanceCollection, sha256 } from "../tools/appearance-catalog-lib.mjs";
-import { loadEngines, sourceRoot } from "../tools/compose-lib.mjs";
+import { compileAppearanceCollection, compileBoundAppearanceProfile, sha256 } from "../tools/appearance-catalog-lib.mjs";
+import { compatibilityRows, composeCandidate, loadEngines, sourceRoot, verifyCandidate } from "../tools/compose-lib.mjs";
+import { verifyComposition } from "../tools/verify-lib.mjs";
 
 const solarArchive = process.env.CTTN_SOLAR_TGZ;
 const loomArchive = process.env.CTTN_LOOM_TGZ;
@@ -78,15 +79,15 @@ test("pure compilation is deterministic and preserves the application layer", ()
 
   const gamerCatalog = JSON.parse(first.files.get("gamer/sttn.catalog.json"));
   const gamerTokens = gamerCatalog.tokenSets[gamerCatalog.accentVariants.orange.tokenSet];
-  assert.equal(gamerTokens[gamerCatalog.accentVariants.orange.light["accent-base"]], "#c13d74");
-  assert.notEqual(gamerTokens[gamerCatalog.accentVariants.cyan.light["accent-base"]], "#c13d74");
+  assert.equal(gamerTokens[gamerCatalog.accentVariants.orange.light["accent-base"]], "#81284e");
+  assert.notEqual(gamerTokens[gamerCatalog.accentVariants.cyan.light["accent-base"]], "#81284e");
   const template = JSON.parse(templateSource);
-  assert.equal(resolvedRole(gamerCatalog, "cyan", "light", "page"), resolvedRole(template, "cyan", "light", "page"));
+  assert.equal(resolvedRole(gamerCatalog, "cyan", "light", "page"), "#c8d9d8");
   const nebularCatalog = JSON.parse(first.files.get("nebular/sttn.catalog.json"));
-  assert.equal(resolvedRole(nebularCatalog, "gold", "light", "page"), resolvedRole(template, "orange", "light", "page"));
+  assert.equal(resolvedRole(nebularCatalog, "gold", "light", "page"), "#ded4e9");
   const animeCatalog = JSON.parse(first.files.get("anime/sttn.catalog.json"));
-  assert.equal(resolvedRole(animeCatalog, "rose", "light", "page"), resolvedRole(template, "orange", "light", "page"));
-  assert.equal(resolvedRole(animeCatalog, "purple", "light", "accent-base"), "#7a4fa3");
+  assert.equal(resolvedRole(animeCatalog, "rose", "light", "page"), "#e8d2e2");
+  assert.equal(resolvedRole(animeCatalog, "purple", "light", "accent-base"), "#543770");
   assert.notEqual(resolvedRole(animeCatalog, "purple", "light", "accent-base"), resolvedRole(template, "cyan", "light", "accent-base"));
   const gamerReport = first.catalog.families.find(family => family.id === "gamer");
   assert.ok(gamerReport.targetDisposition.loomNotApplied.some(entry => entry.kind === "report-default" && entry.targetPath === "tabs.activeIndicator"));
@@ -103,6 +104,129 @@ test("generated member paths reject absolute, escaping and canonical-alias paths
     } } };
     assert.throws(() => compileAppearanceCollection(wrapped, inputs), /Invalid generated member path/);
   }
+});
+
+test("all Starlight variants receive profile light surfaces while dark and code roles remain intact", () => {
+  const result = compileAppearanceCollection(engines, inputs);
+  const template = JSON.parse(templateSource);
+  const sourceRole = { page: "canvas", body: "canvasText", navigation: "surface", header: "surface", sidebar: "mutedSurface", panel: "surface", raised: "elevatedSurface", card: "surface", secondary: "canvasText", border: "fieldBorder", hairline: "fieldBorder", muted: "mutedText", "inline-code": "mutedSurface" };
+  for (const supplied of profiles) {
+    const profile = JSON.parse(supplied.source);
+    const theme = JSON.parse(result.files.get(`${supplied.id}/sttn.catalog.json`));
+    const bound = engines.solar.bindSourceProfileV2(supplied.source);
+    let originalMapping;
+    const observed = { ...bound, mapToStellarLoom(...args) {
+      const mapped = bound.mapToStellarLoom(...args);
+      originalMapping = structuredClone(mapped.catalog);
+      return mapped;
+    } };
+    const single = compileBoundAppearanceProfile(engines, observed, { templateSource, familyBindings: catalog.familyBindings, applicationBaselineLayer: catalog.applicationBaselineLayer });
+    assert.deepEqual(single.loomMapping.catalog, theme);
+    assert.deepEqual(theme.codePresentation, template.codePresentation);
+    for (const variant of Object.keys(theme.accentVariants)) {
+      for (const [role, source] of Object.entries(sourceRole)) assert.equal(resolvedRole(theme, variant, "light", role), profile.color.light[source], `${supplied.id}.${variant}.${role}`);
+      assert.equal(resolvedRole(theme, variant, "light", "code"), resolvedRole(originalMapping, variant, "light", "code"));
+      for (const role of Object.keys(theme.accentVariants[variant].dark)) {
+        assert.equal(resolvedRole(theme, variant, "dark", role), resolvedRole(originalMapping, variant, "dark", role), `${supplied.id}.${variant}.dark.${role}`);
+      }
+    }
+    const disposition = result.catalog.families.find(f => f.id === supplied.id).targetDisposition.lightSurfaceAdaptation;
+    assert.equal(disposition.owner, "shared-catalog-producer");
+    assert.equal(disposition.entries.length, Object.keys(theme.accentVariants).length * 13);
+    const restored = structuredClone(theme);
+    for (const entry of disposition.entries) restored.tokenSets[entry.tokenSet][entry.token] = entry.enginePriorValue;
+    assert.equal(sha256(JSON.stringify(restored, null, 2) + "\n"), disposition.engineCatalogSha256);
+    assert.equal(sha256(JSON.stringify(originalMapping, null, 2) + "\n"), disposition.engineCatalogSha256);
+    assert.equal(sha256(JSON.stringify(theme, null, 2) + "\n"), disposition.adaptedCatalogSha256);
+    const originalCss = engines.loom.compileTheme(originalMapping, { sourceProfileSha256: bound.provenance.rawSourceSha256 });
+    assert.equal(single.loomResult.styles.get("styles/code.css"), originalCss.styles.get("styles/code.css"));
+    const blocks = css => [...css.replace(/\/\*[\s\S]*?\*\//g, "").matchAll(/([^{}]+)\{([^{}]*)\}/g)].map(match => ({ selector: match[1].trim(), body: match[2] }));
+    const isLight = block => /\[data-theme=['"]light['"]\]/.test(block.selector) || /color-scheme:\s*light;/.test(block.body);
+    const darkBlocks = css => blocks(css).filter(block => !isLight(block) && block.body.includes("--tfsl-"));
+    assert.ok(darkBlocks(originalCss.css).length > 0, `${supplied.id}: baseline dark blocks absent`);
+    assert.deepEqual(darkBlocks(single.loomResult.css), darkBlocks(originalCss.css));
+    const lightBlocks = blocks(single.loomResult.css).filter(block => isLight(block) && block.body.includes("--tfsl-color-page:"));
+    assert.ok(lightBlocks.length > 0, `${supplied.id}: compiled light page blocks absent`);
+    for (const block of lightBlocks) {
+      for (const [role, source] of [["page", "canvas"], ["card", "surface"], ["sidebar", "mutedSurface"]]) {
+        assert.match(block.body, new RegExp(`--tfsl-color-${role}: ${profile.color.light[source]};`));
+      }
+      assert.match(block.body, new RegExp(`--tfsl-color-secondary: ${profile.color.light.canvasText};`));
+    }
+  }
+});
+
+test("Starlight surface adaptation refuses dark aliases, unrelated aliases, conflicting tokens and invalid colors", () => {
+  const bound = engines.solar.bindSourceProfileV2(profiles[0].source);
+  const options = { templateSource, familyBindings: catalog.familyBindings, applicationBaselineLayer: catalog.applicationBaselineLayer };
+  for (const [aliasMode, aliasRole, message] of [["dark", "page", /aliases dark mode/], ["light", "code", /aliases an unrelated role/], ["light", "body", /token collision/]]) {
+    const aliased = { ...bound, mapToStellarLoom(...args) {
+      const result = bound.mapToStellarLoom(...args);
+      const theme = structuredClone(result.catalog);
+      theme.accentVariants.cyan.light.page = theme.accentVariants.cyan[aliasMode][aliasRole];
+      return { ...result, catalog: theme };
+    } };
+    assert.throws(() => compileBoundAppearanceProfile(engines, aliased, options), message, `${aliasMode}.${aliasRole}`);
+  }
+  const invalid = { ...bound, profile: structuredClone(bound.profile) };
+  invalid.profile.color.light.canvas = "url(https://invalid.example/)";
+  assert.throws(() => compileBoundAppearanceProfile(engines, invalid, options), /requires opaque profile colors/);
+});
+
+test("complete composition declares and independently verifies only the intended root light-profile differences", () => {
+  const candidate = composeCandidate(engines);
+  const provenance = verifyCandidate(candidate.files);
+  verifyComposition(candidate.files, provenance);
+  const compatibility = JSON.parse(candidate.files.get("reports/sttn-compatibility.json"));
+  const rootTheme = JSON.parse(candidate.files.get("loom-counterpart/terminal-nova.loom.theme.json"));
+  const appearanceTheme = JSON.parse(candidate.files.get("reports/appearances/sttn-catalogs/terminal-nova.json"));
+  const expectedDifferences = {
+    cyan: ["header", "inline-code", "navigation", "panel", "secondary", "sidebar"],
+    orange: ["border", "card", "hairline", "header", "inline-code", "muted", "navigation", "page", "panel", "raised", "secondary", "sidebar"],
+  };
+  for (const family of ["cyan", "orange"]) {
+    const different = Object.keys(rootTheme.accentVariants[family].light).filter(role => resolvedRole(rootTheme, family, "light", role) !== resolvedRole(appearanceTheme, family, "light", role)).sort();
+    assert.deepEqual(different, expectedDifferences[family]);
+  }
+  const originalTemplate = JSON.parse(templateSource);
+  assert.equal(resolvedRole(rootTheme, "orange", "light", "hairline"), resolvedRole(originalTemplate, "orange", "light", "hairline"));
+  assert.ok(compatibility.rows.some(row => row.reason === "Shared light profile revision"));
+  assert.deepEqual(compatibility.rows.filter(row => row.mode === "dark" && row.outcome !== "equal"), [{ family: "cyan", mode: "dark", role: "hairline", sttn: "#393d48", cttn: "#50535d", outcome: "divergent", reason: "Paired border maps to both hairline and border; CTTN chooses STTN border" }]);
+  for (const change of [row => { row.cttn = "#010203"; }, row => { row.mode = "dark"; }, row => { row.role = "code"; }, row => { row.sourcePath = "color.dark.canvas"; }, row => { row.reason = "anything else"; }, row => { row.outcome = "equal"; }]) {
+    const report = structuredClone(compatibility);
+    change(report.rows.find(row => row.reason === "Shared light profile revision"));
+    const files = new Map(candidate.files);
+    files.set("reports/sttn-compatibility.json", JSON.stringify(report, null, 2) + "\n");
+    assert.throws(() => verifyComposition(files, provenance), /compatibility report differs/i);
+  }
+  const missing = structuredClone(compatibility); missing.rows.pop();
+  const files = new Map(candidate.files); files.set("reports/sttn-compatibility.json", JSON.stringify(missing, null, 2) + "\n");
+  assert.throws(() => verifyComposition(files, provenance), /compatibility report differs/i);
+
+  // Self-consistent report and transport hashes cannot bless an arbitrary
+  // counterpart hairline: its value must match source intent or old border.
+  const forged = new Map(candidate.files);
+  const counterpart = structuredClone(rootTheme);
+  const variant = counterpart.accentVariants.cyan;
+  counterpart.tokenSets[variant.tokenSet][variant.dark.hairline] = "#010203";
+  const encode = value => JSON.stringify(value, null, 2) + "\n";
+  const counterpartPath = "loom-counterpart/terminal-nova.loom.theme.json";
+  const reportPath = "reports/sttn-compatibility.json";
+  forged.set(counterpartPath, encode(counterpart));
+  const profile = JSON.parse(candidate.files.get("reports/appearances/source/profiles/terminal-nova.profile.json"));
+  const forgedReport = structuredClone(compatibility);
+  forgedReport.rows = compatibilityRows(originalTemplate, counterpart, profile.color.light);
+  forged.set(reportPath, encode(forgedReport));
+  const composition = JSON.parse(candidate.files.get("composition.json"));
+  composition.counterpartSha256 = sha256(forged.get(counterpartPath));
+  for (const change of composition.changes) if ([counterpartPath, reportPath].includes(change.path)) change.afterSha256 = sha256(forged.get(change.path));
+  forged.set("composition.json", encode(composition));
+  const forgedProvenance = structuredClone(provenance);
+  for (const record of forgedProvenance.files) { record.sha256 = sha256(forged.get(record.path)); record.size = Buffer.byteLength(forged.get(record.path)); }
+  forgedProvenance.inventoryDigest = sha256("cttn.package-inventory-v1\n" + JSON.stringify(forgedProvenance.files));
+  forged.set("provenance.json", encode(forgedProvenance));
+  verifyCandidate(forged);
+  assert.throws(() => verifyComposition(forged, forgedProvenance), /Undeclared STTN divergence: cyan\/dark\/hairline/);
 });
 
 test("closed catalog, binding, override, and CSS-layer guards reject tampering", () => {

@@ -37,7 +37,8 @@ export const BUILD_RECEIPT = "build-receipt.json";
 export const ENGINE_PACKAGES = ["@knowledge-forge-ai/theme-forge-solar-sail", "@knowledge-forge-ai/theme-forge-stellar-loom"];
 /** Repository infrastructure that is neither composed, compiled nor a producer input. */
 export const SUPPORT_FILES = [".github/workflows/verify.yml", ".gitignore", "test/composition.test.mjs", "test/package.test.mjs", "test/tamper.test.mjs",
-  "tools/build.mjs", "tools/qualify-package.mjs", "tools/toolchain.json", "tools/verify-lib.mjs", "tools/verify.mjs"];
+  "tools/build.mjs", "tools/qualify-package.mjs", "tools/toolchain.json", "tools/verify-lib.mjs", "tools/verify.mjs",
+  "docs/unreleased-soft-light-palettes.md", "docs/soft-light-contrast.json"];
 const APPEARANCE_PRODUCER_FILES = ["tools/appearance-catalog-lib.mjs", "tools/compose-appearances.mjs"];
 const APPEARANCE_SUPPORT_FILES = ["test/appearance-catalog.test.mjs", "test/appearance-package-integration.test.mjs", "test/appearance-single-profile.test.mjs"];
 /** Closed first-party site/workflow inventory. Every member is explicit; no site/** glob is admitted. */
@@ -411,7 +412,33 @@ export function verifyComposition(files, provenance) {
   if (sha256(files.get("loom-counterpart/terminal-nova.loom.theme.json")) !== composition.counterpartSha256) fail("Loom counterpart hash mismatch");
   const compatibility = parse(files, "reports/sttn-compatibility.json");
   if (compatibility.sttnSourceSha256 !== composition.sttnSourceSha256) fail("STTN source hash mismatch");
-  for (const row of compatibility.rows) if (row.outcome !== "equal" && row.reason === "Undeclared divergence") fail(`Undeclared STTN divergence: ${row.family}/${row.mode}/${row.role}`);
+  const templatePath = "reports/appearances/source/sttn/v0.4/terminal-nova.theme.json";
+  if (sha256(files.get(templatePath)) !== composition.sttnSourceSha256) fail("Compatibility template source binding differs");
+  const template = parse(files, templatePath);
+  const counterpart = parse(files, "loom-counterpart/terminal-nova.loom.theme.json");
+  const profilePath = "reports/appearances/source/profiles/terminal-nova.profile.json";
+  const profileIdentity = composition.appearanceIntegration?.sourceIdentity?.profiles?.find(profile => profile.id === "terminal-nova");
+  if (!profileIdentity || sha256(files.get(profilePath)) !== profileIdentity.sha256) fail("Compatibility profile source binding differs");
+  const profile = parse(files, profilePath);
+  const expectedRows = [];
+  for (const family of ["cyan", "orange"]) for (const mode of ["light", "dark"]) {
+    for (const role of Object.keys(template.accentVariants[family][mode]).sort()) {
+      const resolveRole = catalog => {
+        const variant = catalog.accentVariants[family];
+        return catalog.tokenSets[variant.tokenSet][variant[mode][role]];
+      };
+      const before = resolveRole(template), after = resolveRole(counterpart);
+      const lightRoles = { "accent-base": family === "cyan" ? "primaryAction" : "highlight", link: family === "cyan" ? "primaryAction" : "highlight", focus: family === "cyan" ? "focus" : "highlight", border: "border", hairline: "border", card: "surface", page: "canvas", raised: "elevatedSurface", muted: "mutedText", body: "canvasText" };
+      const sourceRole = mode === "light" ? lightRoles[role] : undefined;
+      const declared = sourceRole && profile.color.light[sourceRole] === after;
+      const row = { family, mode, role, sttn: before, cttn: after, outcome: before === after ? "equal" : "divergent",
+        reason: before === after ? "Resolved STTN value preserved" : declared ? "Shared light profile revision" : role === "hairline" && after === template.tokenSets[template.accentVariants[family].tokenSet][template.accentVariants[family][mode].border] ? "Paired border maps to both hairline and border; CTTN chooses STTN border" : "Undeclared divergence" };
+      if (row.reason === "Undeclared divergence") fail(`Undeclared STTN divergence: ${family}/${mode}/${role}`);
+      if (row.reason === "Shared light profile revision") row.sourcePath = `color.light.${sourceRole}`;
+      expectedRows.push(row);
+    }
+  }
+  if (JSON.stringify(compatibility.rows) !== JSON.stringify(expectedRows)) fail("Compatibility report differs from authenticated inputs");
   const hasAppearanceMembers = [...files.keys()].some(isAppearanceRootPath);
   const hasAppearanceRecord = composition.appearanceIntegration !== undefined;
   if (hasAppearanceMembers !== hasAppearanceRecord) fail("Appearance integration record/member presence mismatch");

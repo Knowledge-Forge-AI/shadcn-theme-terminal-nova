@@ -1,0 +1,3015 @@
+{
+  "scope": "light profile text/control and accent-on-surface pairs; not universal target accessibility qualification",
+  "pairs": [
+    {
+      "family": "terminal-nova",
+      "foreground": "canvasText",
+      "background": "canvas",
+      "ratio": 10.628,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "surfaceText",
+      "background": "surface",
+      "ratio": 11.707,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "elevatedSurfaceText",
+      "background": "elevatedSurface",
+      "ratio": 12.144,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "primaryActionText",
+      "background": "primaryAction",
+      "ratio": 7.199,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "secondaryActionText",
+      "background": "secondaryAction",
+      "ratio": 9.393,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "mutedText",
+      "background": "mutedSurface",
+      "ratio": 4.734,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "highlightText",
+      "background": "highlight",
+      "ratio": 7.131,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "dangerText",
+      "background": "danger",
+      "ratio": 6.574,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "selectionText",
+      "background": "selection",
+      "ratio": 8.979,
+      "minimum": 4.5
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 5.001,
+      "minimum": 3
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.509,
+      "minimum": 3
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "fieldBorder",
+      "background": "surface",
+      "ratio": 3.816,
+      "minimum": 3
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "primaryAction",
+      "background": "canvas",
+      "ratio": 5.608,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "primaryAction",
+      "background": "surface",
+      "ratio": 6.178,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "primaryAction",
+      "background": "elevatedSurface",
+      "ratio": 6.408,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "primaryAction",
+      "background": "mutedSurface",
+      "ratio": 4.957,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "highlight",
+      "background": "canvas",
+      "ratio": 5.555,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "highlight",
+      "background": "surface",
+      "ratio": 6.119,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "highlight",
+      "background": "elevatedSurface",
+      "ratio": 6.348,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "terminal-nova",
+      "foreground": "highlight",
+      "background": "mutedSurface",
+      "ratio": 4.91,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "canvasText",
+      "background": "canvas",
+      "ratio": 10.935,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "surfaceText",
+      "background": "surface",
+      "ratio": 11.858,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "elevatedSurfaceText",
+      "background": "elevatedSurface",
+      "ratio": 12.425,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "primaryActionText",
+      "background": "primaryAction",
+      "ratio": 8.143,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "secondaryActionText",
+      "background": "secondaryAction",
+      "ratio": 8.39,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "mutedText",
+      "background": "mutedSurface",
+      "ratio": 4.821,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "highlightText",
+      "background": "highlight",
+      "ratio": 8.067,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "dangerText",
+      "background": "danger",
+      "ratio": 6.497,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "selectionText",
+      "background": "selection",
+      "ratio": 9.578,
+      "minimum": 4.5
+    },
+    {
+      "family": "nebular",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 4.86,
+      "minimum": 3
+    },
+    {
+      "family": "nebular",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.27,
+      "minimum": 3
+    },
+    {
+      "family": "nebular",
+      "foreground": "fieldBorder",
+      "background": "surface",
+      "ratio": 3.967,
+      "minimum": 3
+    },
+    {
+      "family": "nebular",
+      "foreground": "primaryAction",
+      "background": "canvas",
+      "ratio": 5.7,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "primaryAction",
+      "background": "surface",
+      "ratio": 6.182,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "primaryAction",
+      "background": "elevatedSurface",
+      "ratio": 6.477,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "primaryAction",
+      "background": "mutedSurface",
+      "ratio": 4.918,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "highlight",
+      "background": "canvas",
+      "ratio": 5.647,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "highlight",
+      "background": "surface",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "highlight",
+      "background": "elevatedSurface",
+      "ratio": 6.417,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "nebular",
+      "foreground": "highlight",
+      "background": "mutedSurface",
+      "ratio": 4.872,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "canvasText",
+      "background": "canvas",
+      "ratio": 10.829,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "surfaceText",
+      "background": "surface",
+      "ratio": 11.827,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "elevatedSurfaceText",
+      "background": "elevatedSurface",
+      "ratio": 12.302,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryActionText",
+      "background": "primaryAction",
+      "ratio": 8.505,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "secondaryActionText",
+      "background": "secondaryAction",
+      "ratio": 9.377,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "mutedText",
+      "background": "mutedSurface",
+      "ratio": 4.616,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "highlightText",
+      "background": "highlight",
+      "ratio": 8.455,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "dangerText",
+      "background": "danger",
+      "ratio": 6.574,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "selectionText",
+      "background": "selection",
+      "ratio": 10.631,
+      "minimum": 4.5
+    },
+    {
+      "family": "developer",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 5.245,
+      "minimum": 3
+    },
+    {
+      "family": "developer",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.728,
+      "minimum": 3
+    },
+    {
+      "family": "developer",
+      "foreground": "fieldBorder",
+      "background": "surface",
+      "ratio": 3.151,
+      "minimum": 3
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryAction",
+      "background": "canvas",
+      "ratio": 6.098,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryAction",
+      "background": "surface",
+      "ratio": 6.66,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryAction",
+      "background": "elevatedSurface",
+      "ratio": 6.927,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryAction",
+      "background": "mutedSurface",
+      "ratio": 5.28,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryAction",
+      "background": "hover",
+      "ratio": 5.519,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "primaryAction",
+      "background": "active",
+      "ratio": 4.797,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "highlight",
+      "background": "canvas",
+      "ratio": 6.062,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "highlight",
+      "background": "surface",
+      "ratio": 6.62,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "highlight",
+      "background": "elevatedSurface",
+      "ratio": 6.886,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "highlight",
+      "background": "mutedSurface",
+      "ratio": 5.249,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "highlight",
+      "background": "hover",
+      "ratio": 5.487,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "developer",
+      "foreground": "highlight",
+      "background": "active",
+      "ratio": 4.768,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "canvasText",
+      "background": "canvas",
+      "ratio": 10.762,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "surfaceText",
+      "background": "surface",
+      "ratio": 11.544,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "elevatedSurfaceText",
+      "background": "elevatedSurface",
+      "ratio": 12.055,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryActionText",
+      "background": "primaryAction",
+      "ratio": 9.087,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "secondaryActionText",
+      "background": "secondaryAction",
+      "ratio": 9.318,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "mutedText",
+      "background": "mutedSurface",
+      "ratio": 4.722,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlightText",
+      "background": "highlight",
+      "ratio": 9.028,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "dangerText",
+      "background": "danger",
+      "ratio": 6.574,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "selectionText",
+      "background": "selection",
+      "ratio": 9.519,
+      "minimum": 4.5
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 4.68,
+      "minimum": 3
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.02,
+      "minimum": 3
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "fieldBorder",
+      "background": "surface",
+      "ratio": 3.882,
+      "minimum": 3
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryAction",
+      "background": "canvas",
+      "ratio": 6.337,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryAction",
+      "background": "surface",
+      "ratio": 6.798,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryAction",
+      "background": "elevatedSurface",
+      "ratio": 7.099,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryAction",
+      "background": "mutedSurface",
+      "ratio": 5.487,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryAction",
+      "background": "hover",
+      "ratio": 5.694,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "primaryAction",
+      "background": "active",
+      "ratio": 4.861,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlight",
+      "background": "canvas",
+      "ratio": 6.296,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlight",
+      "background": "surface",
+      "ratio": 6.754,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlight",
+      "background": "elevatedSurface",
+      "ratio": 7.053,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlight",
+      "background": "mutedSurface",
+      "ratio": 5.451,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlight",
+      "background": "hover",
+      "ratio": 5.657,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "graphic-designer",
+      "foreground": "highlight",
+      "background": "active",
+      "ratio": 4.829,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "canvasText",
+      "background": "canvas",
+      "ratio": 10.895,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "surfaceText",
+      "background": "surface",
+      "ratio": 12.072,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "elevatedSurfaceText",
+      "background": "elevatedSurface",
+      "ratio": 12.485,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryActionText",
+      "background": "primaryAction",
+      "ratio": 9.734,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "secondaryActionText",
+      "background": "secondaryAction",
+      "ratio": 8.271,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "mutedText",
+      "background": "mutedSurface",
+      "ratio": 5.086,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "highlightText",
+      "background": "highlight",
+      "ratio": 9.74,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "dangerText",
+      "background": "danger",
+      "ratio": 6.469,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "selectionText",
+      "background": "selection",
+      "ratio": 9.734,
+      "minimum": 4.5
+    },
+    {
+      "family": "anime",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 4.244,
+      "minimum": 3
+    },
+    {
+      "family": "anime",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 4.703,
+      "minimum": 3
+    },
+    {
+      "family": "anime",
+      "foreground": "fieldBorder",
+      "background": "surface",
+      "ratio": 4.116,
+      "minimum": 3
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryAction",
+      "background": "canvas",
+      "ratio": 6.836,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryAction",
+      "background": "surface",
+      "ratio": 7.575,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryAction",
+      "background": "elevatedSurface",
+      "ratio": 7.834,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryAction",
+      "background": "mutedSurface",
+      "ratio": 5.92,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryAction",
+      "background": "hover",
+      "ratio": 5.863,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "primaryAction",
+      "background": "active",
+      "ratio": 4.729,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "highlight",
+      "background": "canvas",
+      "ratio": 6.84,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "highlight",
+      "background": "surface",
+      "ratio": 7.579,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "highlight",
+      "background": "elevatedSurface",
+      "ratio": 7.839,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "highlight",
+      "background": "mutedSurface",
+      "ratio": 5.924,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "highlight",
+      "background": "hover",
+      "ratio": 5.866,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "anime",
+      "foreground": "highlight",
+      "background": "active",
+      "ratio": 4.732,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "canvasText",
+      "background": "canvas",
+      "ratio": 11.968,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "surfaceText",
+      "background": "surface",
+      "ratio": 13.176,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "elevatedSurfaceText",
+      "background": "elevatedSurface",
+      "ratio": 14.247,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryActionText",
+      "background": "primaryAction",
+      "ratio": 8.948,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "secondaryActionText",
+      "background": "secondaryAction",
+      "ratio": 8.609,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "mutedText",
+      "background": "mutedSurface",
+      "ratio": 4.584,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlightText",
+      "background": "highlight",
+      "ratio": 8.851,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "dangerText",
+      "background": "danger",
+      "ratio": 6.574,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "selectionText",
+      "background": "selection",
+      "ratio": 8.991,
+      "minimum": 4.5
+    },
+    {
+      "family": "gamer",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 4.676,
+      "minimum": 3
+    },
+    {
+      "family": "gamer",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.148,
+      "minimum": 3
+    },
+    {
+      "family": "gamer",
+      "foreground": "fieldBorder",
+      "background": "surface",
+      "ratio": 3.382,
+      "minimum": 3
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryAction",
+      "background": "canvas",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryAction",
+      "background": "surface",
+      "ratio": 6.742,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryAction",
+      "background": "elevatedSurface",
+      "ratio": 7.29,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryAction",
+      "background": "mutedSurface",
+      "ratio": 5.299,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryAction",
+      "background": "hover",
+      "ratio": 5.717,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "primaryAction",
+      "background": "active",
+      "ratio": 4.907,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlight",
+      "background": "canvas",
+      "ratio": 6.057,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlight",
+      "background": "surface",
+      "ratio": 6.669,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlight",
+      "background": "elevatedSurface",
+      "ratio": 7.211,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlight",
+      "background": "mutedSurface",
+      "ratio": 5.241,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlight",
+      "background": "hover",
+      "ratio": 5.655,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    },
+    {
+      "family": "gamer",
+      "foreground": "highlight",
+      "background": "active",
+      "ratio": 4.854,
+      "minimum": 4.5,
+      "use": "accent/link text on light target surfaces"
+    }
+  ],
+  "compiledStarlightAccentPairs": [
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 5.608,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.957,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.178,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.178,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 6.408,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.957,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 5.608,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.957,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.178,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.178,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 6.408,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.957,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 5.555,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.91,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.119,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.119,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 6.348,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.91,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 5.555,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.91,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.119,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.119,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 6.348,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "terminal-nova",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.91,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 4.734,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.084,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 5.133,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 5.133,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 5.379,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.084,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 4.734,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.084,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 5.133,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 5.133,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 5.379,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.084,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 4.731,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.082,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 5.13,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 5.13,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 5.375,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.082,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 4.731,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.082,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 5.13,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 5.13,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 5.375,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.082,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 5.7,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.918,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.182,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.182,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 6.477,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.918,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 5.7,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.918,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.182,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.182,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 6.477,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.918,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 5.647,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.872,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 6.417,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.872,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 5.647,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.872,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 6.417,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "nebular",
+      "variant": "gold",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.872,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.098,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.28,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.66,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.66,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 6.927,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.28,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.098,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.28,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.66,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.66,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 6.927,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.28,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.062,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.249,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.62,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.62,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 6.886,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.249,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.062,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.249,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.62,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.62,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 6.886,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "developer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.249,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.337,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.487,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.798,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.798,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 7.099,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.487,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.337,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.487,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.798,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.798,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 7.099,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.487,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.296,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.451,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.754,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.754,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 7.053,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.451,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.296,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.451,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.754,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.754,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 7.053,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "graphic-designer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.451,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 4.749,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.113,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 5.262,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 5.262,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 5.442,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.113,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 4.749,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.113,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 5.262,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 5.262,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 5.442,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.113,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 4.746,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 4.11,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 5.259,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 5.259,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 5.439,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 4.11,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 4.746,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 4.11,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 5.259,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 5.259,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 5.439,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 4.11,
+      "minimum": 4.5,
+      "passed": false,
+      "retainedLegacyVariant": true
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.836,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.92,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 7.575,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 7.575,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 7.834,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.92,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.836,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.92,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 7.575,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 7.575,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 7.834,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "purple",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.92,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.84,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.924,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 7.579,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 7.579,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 7.839,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.924,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.84,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.924,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 7.579,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 7.579,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 7.839,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "anime",
+      "variant": "rose",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.924,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.057,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.241,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.669,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.669,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 7.211,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.241,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.057,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.241,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.669,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.669,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 7.211,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "cyan",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.241,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "page",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "sidebar",
+      "ratio": 5.299,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "card",
+      "ratio": 6.742,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "panel",
+      "ratio": 6.742,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "raised",
+      "ratio": 7.29,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "link",
+      "background": "inline-code",
+      "ratio": 5.299,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "page",
+      "ratio": 6.124,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "sidebar",
+      "ratio": 5.299,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "card",
+      "ratio": 6.742,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "panel",
+      "ratio": 6.742,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "raised",
+      "ratio": 7.29,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    },
+    {
+      "family": "gamer",
+      "variant": "orange",
+      "foreground": "accent-base",
+      "background": "inline-code",
+      "ratio": 5.299,
+      "minimum": 4.5,
+      "passed": true,
+      "retainedLegacyVariant": false
+    }
+  ],
+  "knownLegacyDebt": "Introduced by this adaptation on selectable retained cyan/orange Starlight variants of Nebular and Anime:16 link/accent pairs below4.5 on muted surfaces. Current profile-selected variants pass. Anime focus/active pair is approximately2.93, below3. Resolve before merge/release consideration.",
+  "method": "WCAG sRGB linearization, luminance 0.2126/0.7152/0.0722; contrast=(Lmax+0.05)/(Lmin+0.05). Static bounded audit, not universal accessibility qualification.",
+  "generatedCollectionDigest": "d172e64015c2f3af32b8824924f2e3472925ce3fa6950442dd9e580a71490b19",
+  "priorPublicDarkComparison": {
+    "scope": "This development diff against recovered public Git blobs; separate from adaptation-only regression tests",
+    "canonicalHashForm": "JSON sorted keys and compact separators; application dark blocks omit CSS comments",
+    "families": [
+      {
+        "family": "terminal-nova",
+        "profileDarkAndOverrideBeforeSha256": "6fcda99abe73ea1da6a9f4d7c0ea8b0c7b702b8dd44198da7b659182e1e7cada",
+        "profileDarkAndOverrideAfterSha256": "6fcda99abe73ea1da6a9f4d7c0ea8b0c7b702b8dd44198da7b659182e1e7cada",
+        "priorPublicApplicationBlob": "1598b8fca2e259ff08d4fe25eb932e1683a3ba92",
+        "applicationDarkBlocks": 3,
+        "applicationDarkBeforeSha256": "c81283185f4df0ff1ea3fbb719245cb71f6d681e722d2575d6a30724c1cc3e74",
+        "applicationDarkAfterSha256": "c81283185f4df0ff1ea3fbb719245cb71f6d681e722d2575d6a30724c1cc3e74"
+      },
+      {
+        "family": "nebular",
+        "profileDarkAndOverrideBeforeSha256": "b481353291ff7809525b739e6ffd701abfaf2dc43d6b7ae21bfd9db61c770540",
+        "profileDarkAndOverrideAfterSha256": "b481353291ff7809525b739e6ffd701abfaf2dc43d6b7ae21bfd9db61c770540",
+        "priorPublicApplicationBlob": "98569a7bc6896ce410ec320cd949b3b6a8270bfb",
+        "applicationDarkBlocks": 3,
+        "applicationDarkBeforeSha256": "a837aa66b0eacb013a3d8b278f31ee028c803e17c6fa4c2ccd5af80056837c20",
+        "applicationDarkAfterSha256": "a837aa66b0eacb013a3d8b278f31ee028c803e17c6fa4c2ccd5af80056837c20"
+      },
+      {
+        "family": "developer",
+        "profileDarkAndOverrideBeforeSha256": "0a82456f63c0e5917be3774e4df63a0cf66a1b85260e70947bf1604411938410",
+        "profileDarkAndOverrideAfterSha256": "0a82456f63c0e5917be3774e4df63a0cf66a1b85260e70947bf1604411938410",
+        "priorPublicApplicationBlob": "aa3c5615f0aad1ac4e146ce3ab4c43f2c3c64768",
+        "applicationDarkBlocks": 3,
+        "applicationDarkBeforeSha256": "bf8dc8a69b3f7476aeb288178659c7faa820b79e84bc069413461cb69c693dc5",
+        "applicationDarkAfterSha256": "bf8dc8a69b3f7476aeb288178659c7faa820b79e84bc069413461cb69c693dc5"
+      },
+      {
+        "family": "graphic-designer",
+        "profileDarkAndOverrideBeforeSha256": "60524c5f3defdada0c1f618ea618ef43f6161feda85d68331420b9de504856c1",
+        "profileDarkAndOverrideAfterSha256": "60524c5f3defdada0c1f618ea618ef43f6161feda85d68331420b9de504856c1",
+        "priorPublicApplicationBlob": "269788dcd989915ee1579448444e0083c4691e01",
+        "applicationDarkBlocks": 3,
+        "applicationDarkBeforeSha256": "cbe6869ff00534c9f4951fc0bb32f84247b0821375b3804ceffc34ae8cb255db",
+        "applicationDarkAfterSha256": "cbe6869ff00534c9f4951fc0bb32f84247b0821375b3804ceffc34ae8cb255db"
+      },
+      {
+        "family": "anime",
+        "profileDarkAndOverrideBeforeSha256": "1f5d0100215d0cded082f4404a9f1ae341df807309f7e7c0ac29bb73b301a0a5",
+        "profileDarkAndOverrideAfterSha256": "1f5d0100215d0cded082f4404a9f1ae341df807309f7e7c0ac29bb73b301a0a5",
+        "priorPublicApplicationBlob": "11218447dd996d60095fa94d226391249f1f7754",
+        "applicationDarkBlocks": 3,
+        "applicationDarkBeforeSha256": "1824f65a7197ba7354bc1504ae0eb3524e1b2ed3961aec5854d2baf2ccb5305f",
+        "applicationDarkAfterSha256": "1824f65a7197ba7354bc1504ae0eb3524e1b2ed3961aec5854d2baf2ccb5305f"
+      },
+      {
+        "family": "gamer",
+        "profileDarkAndOverrideBeforeSha256": "022764209fd54865b16b8cce255a3594925554f32173689cf5717c4d739172eb",
+        "profileDarkAndOverrideAfterSha256": "022764209fd54865b16b8cce255a3594925554f32173689cf5717c4d739172eb",
+        "priorPublicApplicationBlob": "5939e6bfc74e16f1753b7c93985100cbe0823f43",
+        "applicationDarkBlocks": 3,
+        "applicationDarkBeforeSha256": "8851067ad4f54c51e793bae4c02e6e79369a0de42babd6b9e3ea7565fe7eda07",
+        "applicationDarkAfterSha256": "8851067ad4f54c51e793bae4c02e6e79369a0de42babd6b9e3ea7565fe7eda07"
+      }
+    ]
+  },
+  "additionalFocusDebt": {
+    "family": "anime",
+    "foreground": "focus",
+    "background": "active",
+    "ratio": 2.93,
+    "minimum": 3,
+    "includedIn136PassingProfilePairs": false,
+    "introducedBy": "new active surface"
+  }
+}

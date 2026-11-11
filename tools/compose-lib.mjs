@@ -128,14 +128,19 @@ export async function loadEngines(archivePaths, workRoot = tmpdir()) {
 }
 
 /** Resolve colour meaning rather than token reference names or package identity. */
-export function compatibilityRows(before, after) {
+export function compatibilityRows(before, after, pairedLight = undefined) {
   const rows = [];
   for (const family of ["cyan", "orange"]) for (const mode of ["light", "dark"]) {
     for (const role of Object.keys(before.accentVariants[family][mode]).sort()) {
       const oldValue = before.tokenSets[before.accentVariants[family].tokenSet][before.accentVariants[family][mode][role]];
       const newValue = after.tokenSets[after.accentVariants[family].tokenSet][after.accentVariants[family][mode][role]];
-      rows.push({ family, mode, role, sttn: oldValue, cttn: newValue, outcome: oldValue === newValue ? "equal" : "divergent",
-        reason: oldValue === newValue ? "Resolved STTN value preserved" : role === "hairline" ? "Paired border maps to both hairline and border; CTTN chooses STTN border" : "Undeclared divergence" });
+      const lightRoles = { "accent-base": family === "cyan" ? "primaryAction" : "highlight", link: family === "cyan" ? "primaryAction" : "highlight", focus: family === "cyan" ? "focus" : "highlight", border: "border", hairline: "border", card: "surface", page: "canvas", raised: "elevatedSurface", muted: "mutedText", body: "canvasText" };
+      const sourceRole = mode === "light" ? lightRoles[role] : undefined;
+      const declared = sourceRole && pairedLight && pairedLight[sourceRole] === newValue;
+      const row = { family, mode, role, sttn: oldValue, cttn: newValue, outcome: oldValue === newValue ? "equal" : "divergent",
+        reason: oldValue === newValue ? "Resolved STTN value preserved" : declared ? "Shared light profile revision" : role === "hairline" && newValue === before.tokenSets[before.accentVariants[family].tokenSet][before.accentVariants[family][mode].border] ? "Paired border maps to both hairline and border; CTTN chooses STTN border" : "Undeclared divergence" };
+      if (row.reason === "Shared light profile revision") row.sourcePath = `color.light.${sourceRole}`;
+      rows.push(row);
     }
   }
   return rows;
@@ -225,7 +230,7 @@ export function composeCandidate({ solar, loom, archives }, profileSource = read
       newTarget: "styles/appearances/terminal-nova.css",
       relation: "The historical Solar root remains a legacy package target; the catalog-derived Terminal Nova appearance projection is a separate target and is not asserted byte-identical to that root",
     },
-    rows: compatibilityRows(sttn, counterpart.catalog),
+    rows: compatibilityRows(sttn, counterpart.catalog, bound.profile.color.light),
   };
   files.set("reports/sttn-compatibility.json", json(compatibility));
   files.set("reports/solar-sail.provenance.json", original.get("provenance.json"));
