@@ -465,6 +465,10 @@ export function App() {
       <Header preference={preference} onPreferenceChange={setPreference} />
       <main>
         <HeroSection />
+        <section className="project-mascot" aria-labelledby="mascot-heading">
+  <figure><img src="/orihime.webp" alt="Orihime, a plum-haired celestial weaver in a lilac kimono-inspired dress, holding a golden shuttle and threads of starlight." width="1024" height="1536" loading="lazy" decoding="async" /><figcaption>Orihime · Theme Forge</figcaption></figure>
+  <div className="mascot-copy"><p className="mascot-eyebrow">Celestial weaver · Theme Forge</p><h2 id="mascot-heading">A shared thread, a distinct expression.</h2><p>Orihime is Theme Forge’s celestial weaver. Across the family, shared design intent becomes a different expression in each component system.</p></div>
+</section>
         <ComponentGallery />
         <FamiliesSection families={families} />
         <WorkflowSection families={families} />
