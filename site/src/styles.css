@@ -1068,3 +1068,29 @@ input[type="radio"] {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Project-site presentation. Published theme/specimen files remain independent. */
+:root:not(.dark) {
+  --background: #d1ddeb;
+  --foreground: #20334d;
+  --card: #dce5ee;
+  --card-foreground: #20334d;
+  --popover: #e2e9ef;
+  --popover-foreground: #20334d;
+  --secondary: #c0d0e1;
+  --secondary-foreground: #253950;
+  --muted: #c4d3e1;
+  --muted-foreground: #42566d;
+  --primary: #245478;
+  --primary-foreground: #e4edf3;
+  --accent: #a8c8cb;
+  --accent-foreground: #233b43;
+  --border: #7890a8;
+  --input: #657e97;
+  --ring: #245478;
+}
+:root {
+  --font-sans: 'Trebuchet MS', Verdana, sans-serif;
+  --font-heading: 'Avenir Next', Avenir, 'Trebuchet MS', sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+}
