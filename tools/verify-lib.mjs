@@ -71,6 +71,7 @@ export const REPOSITORY_SITE_FILES = Object.freeze([
   "site/public/brand/cttn-social.png",
   "site/public/brand/cttn-social.svg",
   "site/public/favicon.svg",
+  "site/public/orihime.webp",
   "site/public/robots.txt",
   "site/specimen.html",
   "site/src/App.tsx",
@@ -101,8 +102,8 @@ export const REPOSITORY_SITE_FILES = Object.freeze([
   "site/tsconfig.json",
   "site/vite.config.ts",
 ]);
-if (REPOSITORY_SITE_FILES.length !== 58 || new Set(REPOSITORY_SITE_FILES).size !== REPOSITORY_SITE_FILES.length) {
-  throw new Error("Maintained repository site inventory must contain 58 unique paths");
+if (REPOSITORY_SITE_FILES.length !== 59 || new Set(REPOSITORY_SITE_FILES).size !== REPOSITORY_SITE_FILES.length) {
+  throw new Error("Maintained repository site inventory must contain 59 unique paths");
 }
 const IGNORED_ROOTS = new Set([".git", "node_modules"]);
 const LEAK_PATTERNS = [/\/(Users|home|private\/var)\/[A-Za-z]/, /agent[-]scratch/, /triad[-]20\d\d/, /[.]serena\b/, /-----BEGIN [A-Z ]*PRIVATE KEY/,

@@ -27,11 +27,12 @@ test("pristine repository and package trees verify", () => {
   assert.equal(verifyTree(packageTree(), "package").status, "passed");
 });
 
-test("the repository site inventory is exactly 58 closed members", () => {
-  assert.equal(REPOSITORY_SITE_FILES.length, 58);
-  assert.equal(new Set(REPOSITORY_SITE_FILES).size, 58);
-  assert.equal(REPOSITORY_SITE_FILES.filter(path => path.startsWith("site/")).length, 57);
+test("the repository site inventory is exactly 59 closed members", () => {
+  assert.equal(REPOSITORY_SITE_FILES.length, 59);
+  assert.equal(new Set(REPOSITORY_SITE_FILES).size, 59);
+  assert.equal(REPOSITORY_SITE_FILES.filter(path => path.startsWith("site/")).length, 58);
   assert.ok(REPOSITORY_SITE_FILES.includes(".github/workflows/cttn-pages.yml"));
+  assert.ok(REPOSITORY_SITE_FILES.includes("site/public/orihime.webp"));
 
   const missing = copy();
   missing.delete("site/README.md");
