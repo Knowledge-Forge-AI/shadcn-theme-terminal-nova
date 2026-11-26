@@ -1,0 +1,29 @@
+{
+  "carrierRevision": 7,
+  "illustrationId": "orihime-vector-study",
+  "lockDigest": "sha256:9dc24cfd1fafa91782858733628ca1ebe82e9c01ec885514d42e92e03ce21cef",
+  "manifestDigest": "sha256:7e8aaeea18d61264b5a393739d429daec6450b788b4e6fc53ebf8d73f9dcf1d6",
+  "mappings": [
+    {
+      "byteLength": 338764,
+      "derivativeId": "orihime-1024",
+      "destination": "public/orihime-1024.webp",
+      "mime": "image/webp",
+      "recipeDigest": "sha256:6d2ac063ac7b8e8f157f44b4448cc5539d232bbbbaca8489f1522e545373a7b2",
+      "sha256": "sha256:4887b470f9cf834f6a2928b472835ede4b6f2e0dd3d8be27e65427cf06be021c"
+    },
+    {
+      "byteLength": 146792,
+      "derivativeId": "orihime-512",
+      "destination": "public/orihime-512.webp",
+      "mime": "image/webp",
+      "recipeDigest": "sha256:cfb6c001be55f5954be7a4ed3f46f648d2ecba516955d0c432f6f22c8b1de1f6",
+      "sha256": "sha256:040d538399010ac187249b592742c7b1c9e944234ebe8fd1e05c25ec3836e357"
+    }
+  ],
+  "packageId": "orihime-vector-study",
+  "profileDigest": "sha256:c78d6e55ed44a4ded566855009922c565e94620ee0a902af1743c46c056b9e3b",
+  "recordDigest": "sha256:1546d82fa90ac1a6ec3c9328d02f203292e231abf5759025f458f2fd070f579d",
+  "schema": "tfsb.illustration-consumer-lock",
+  "schemaVersion": 1
+}

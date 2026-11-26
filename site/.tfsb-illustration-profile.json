@@ -1,0 +1,18 @@
+{
+  "id": "cttn-site",
+  "illustrationId": "orihime-vector-study",
+  "mappings": [
+    {
+      "derivativeId": "orihime-1024",
+      "destination": "public/orihime-1024.webp"
+    },
+    {
+      "derivativeId": "orihime-512",
+      "destination": "public/orihime-512.webp"
+    }
+  ],
+  "packageId": "orihime-vector-study",
+  "profileDigest": "sha256:c78d6e55ed44a4ded566855009922c565e94620ee0a902af1743c46c056b9e3b",
+  "schema": "tfsb.illustration-consumer-profile",
+  "schemaVersion": 1
+}
